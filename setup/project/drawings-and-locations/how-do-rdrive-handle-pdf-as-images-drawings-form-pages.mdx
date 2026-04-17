@@ -1,0 +1,10 @@
+---
+title: "How do RDrive handle PDF as images (drawings/form pages)"
+description: "PDF will be converted to PNG images before uploading to the server."
+---
+
+PDF will be converted to PNG images before uploading to the server.
+
+The width and height of the PNG image will be `the width and height of PDF * 3`, but the maximum width and height will be limited to 16384px.
+
+Note that the PNG file size may be much larger than the original PDF. If the PNG generated is too large to upload, the administrator may consider converting the PDF to a smaller image or SVG(which will affect plan viewer performance) before uploading to SnagR.

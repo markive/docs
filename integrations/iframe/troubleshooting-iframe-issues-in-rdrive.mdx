@@ -1,0 +1,20 @@
+---
+title: "Troubleshooting iFrame Issues in RDrive"
+description: "You may find that, on occasion, you are unable to add a website into RDrive's iFrame Dashboard feature. This can happen when the website has been created so tha"
+---
+
+### **Why some websites wont load?**
+
+You may find that, on occasion, you are unable to add a website into RDrive's iFrame Dashboard feature. This can happen when the website has been created so that it can only be integrated via iFrame by a user within that domains group.
+
+For the purposes of this article, we want to publish a website be shown via iFrame. When adding this to the customers dashboard suite, the visual returns as shown below.
+
+![Troubleshooting iFrame Issues in RDrive](/images/kb/103000334499/7prHkXNFtg1B7V7JFHKGoLks-99qc6CKZg.png)
+
+This means that the website has refused to be embedded as an iFrame. A look at the console error log will show that this is not possible to be embedded in a frame because it set 'X-Frame Options' to 'sameorigin'.
+
+![Troubleshooting iFrame Issues in RDrive](/images/kb/103000334499/Ma8bFDqnZ8jSyNlAcprLl5_yMwCS2iCMCw.png)
+
+This means that only sites from the same domain are able to embed it as an iFrame. 
+
+**If this site is hosted by the Client you can advise them of this error message and have them change the 'X-Frame Options' headers on their side.**

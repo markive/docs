@@ -1,0 +1,12 @@
+---
+title: "Does a Process have to be assigned to someone / a team at all times?"
+description: "There are multiple forms in a process, not all of them are immediately in use. Some of them may become active once the prior forms are closed. Then permissions"
+---
+
+There are multiple forms in a process, not all of them are immediately in use. Some of them may become active once the prior forms are closed. Then permissions come into play. Certain users are not allowed to read specific forms in a process, even though they can create the process. For example, they can create a 3-form process, but are not allowed to read form 3 because it could be budget related and confidential. This form isn’t used at the very beginning, but is created when the process starts.
+
+These processes can be created on the device, which further complicate things because we do not trust data coming from a device from a security point of view.
+
+As a result, you can have forms that you may not know who to assign to because they are not yet active you are not allowed to assign to anyone because of permissions And because we don’t trust data coming from the device, we have to reject attempts of automatic assignment if we determine that you do not have the permissions to do so.
+
+This means the requirement of every form having an assignee would fail the permission check, and is itself a logical error because you do not always know who to assign to as you cannot reliably predict the future.

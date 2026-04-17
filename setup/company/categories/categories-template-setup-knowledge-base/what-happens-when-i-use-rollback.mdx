@@ -1,0 +1,15 @@
+---
+title: "What happens when I use 'Rollback'?"
+description: "When you rollback an issue template or a process template,"
+---
+
+When you rollback an issue template or a process template,
+
+-   You make a copy of all the fields and settings of a previous version of the template and make them the current unpublished version of the template
+    
+-   If you have any unpublished changes to the template at the time you perform a rollback, they are discarded
+    
+
+You have to publish it to confirm the changes.
+
+From a data structure perspective, these are all new objects with a new set of IDs. The relationship with previous versions is maintained through `versionReference` so we can keep track of the data across versions. But in terms of the data, these are all independent new objects with their own `id`.

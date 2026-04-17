@@ -1,0 +1,110 @@
+---
+title: "Functional Areas and Role-Based Permissions"
+description: "Manage and track problems, tasks, or activities that require attention. Permissions include viewing, editing, changing status, closing, reopening, sharing, unsh"
+---
+
+### **Mastering Roles & Permissions in RDrive: Who Can Do What?** 
+
+### **Issues**
+
+Manage and track problems, tasks, or activities that require attention. Permissions include viewing, editing, changing status, closing, reopening, sharing, unsharing, changing controllers, moving, and deleting issues.
+
+### **Processes**
+
+Oversee and manage workflows or sequences of tasks. Permissions include viewing processes, creating linked templates, sharing, unsharing, changing controllers, moving, and deleting processes.
+
+### **Forms**
+
+Handle and manage documents and templates used for data collection and reporting. Permissions include viewing, creating, editing, changing status, closing, reopening, sharing, unsharing, changing controllers, moving, and deleting forms
+
+**![Functional Areas and Role-Based Permissions](/images/kb/103000297140/LPrxoKxiXXSEXdHXDJNsnLzbLWFmMi2kYQ.png)**
+
+**All Roles and Permissions**
+
+**![Functional Areas and Role-Based Permissions](/images/kb/103000297140/FIBLELsoTL00aEPMmPJXhLqagJqp_ABjAQ.png)**
+
+<Note>
+Note: Each role includes permissions from the previous role. For example, "Can Close" includes all permissions from "Can Edit," and "Manager" includes all permissions from "Can Close."
+</Note>
+
+* * *
+
+### **Roles and Permission by Item Type**
+
+Each role builds upon the previous one, ensuring higher roles have comprehensive access to perform their tasks efficiently and securely.
+
+### **Issues:**
+
+| Role | Permissions | Conditions |
+| --- | --- | --- |
+| **Read Only** | **READ (View Issues)** | **Controlled by team tag, Issue profile tag** |
+| ✏️ **Can Edit** | Includes Read Only permissions | \- |
+| ✏️ EDIT (Edit Issues) | Issue status tag, Assigned to my team, Controlled by my team |
+| CHANGE STATUS (Change Status of Issues) | Issue status tag, Options: Issue status tag, Mandatory required |
+| ➕ CREATE (Create Linked Templates) | Options: Issue matches my team tag |
+| ✅ **Can Close** | ✏️ Includes Can Edit permissions | \- |
+| ✅ CLOSE (Close Issues) | Issue status tag, Options: Issue status tag, Mandatory required |
+| **?****Manager** | ✅ Includes Can Close permissions | \- |
+|  CHANGE STATUS (Change Status of Issues) | Controlled by my team |
+| ✅ CLOSE (Close Issues) | Controlled by my team |
+| REOPEN (Reopen Issues) | Controlled by team tag |
+| SHARE (Share Issues) | Controlled by team tag |
+| UNSHARE (Unshare Issues) | Controlled by team tag |
+| CHANGE CONTROLLER (Change Controller of Issues) | Controlled by team tag |
+| MOVE (Move Issues) | Controlled by team tag |
+| ❌ DELETE (Delete Issues) | Controlled by team tag |
+
+### **Processes:**
+
+| Role | Permissions | Conditions |
+| --- | --- | --- |
+| **Read Only** | **READ (View Processes)** | **Controlled by team tag, Process profile tag** |
+| ✏️ **Can Edit** | Includes Read Only permissions | \- |
+|  | ➕ CREATE (Create Linked Templates) | Options: Process matches my team tag |
+| ✅ **Can** **Close** | ✏️ Includes Can Edit permissions | \- |
+|  | No specific permissions | \- |
+| **? Manager** | ✅ Includes Can Close permissions | \- |
+|  | ✏️ EDIT process external Reference | Controlled by team tag |
+|   
+ | SHARE (Share Processes) | Controlled by team tag |
+|   
+ | UNSHARE (Unshare Processes) | Controlled by team tag |
+|   
+ | CHANGE CONTROLLER (Change Controller of Processes) | Controlled by my team |
+|   
+ | MOVE (Move Processes) | Controlled by team tag |
+|  | ❌ DELETE (Delete Processes) | Controlled by team tag |
+
+### **Forms**:
+
+| Role | Permissions | Conditions |
+| --- | --- | --- |
+| **Read Only** | **READ (View Forms)** | **Controlled by team tag, Form template tag** |
+| **✏️ Can Edit** | Includes Read Only permissions | **\-** |
+|  | ➕ CREATE (Create Forms) | Options: Form template tag, Process matches my team tag |
+|  | ✏️ EDIT (Edit Forms) | Form status tag, Assigned to my team, Controlled by my team, Form template tag |
+|   
+ | CHANGE STATUS (Change Status of Forms) | Form status tag, Options: Form status tag, Mandatory required |
+| **✅ Can Close** | ✏️ Includes Can Edit permissions | \- |
+|  | ✅ CLOSE (Close Forms) | Form status tag, Options: Form status tag, Mandatory required, Form template tag |
+| ? **Manager** | ✅ Includes Can Close permissions | \- |
+|   
+ | CHANGE STATUS (Change Status of Forms) | Controlled by my team |
+|  | ✅ CLOSE (Close Forms) | Controlled by my team |
+|   
+ | REOPEN (Reopen Forms) | Controlled by team tag |
+|   
+ | SHARE (Share Forms) | Controlled by team tag |
+|   
+ | UNSHARE (Unshare Forms) | Controlled by team tag |
+|   
+ | CHANGE CONTROLLER (Change Controller of Forms) | Controlled by my team |
+|   
+ | MOVE (Move Forms) | Controlled by team tag |
+|  | ❌ DELETE (Delete Forms) | Controlled by team tag |
+
+* * *
+
+### **Summary**
+
+The hierarchical structure of permissions ensures that users have the necessary access levels to perform their tasks while maintaining data integrity and security. The "Manager" role includes all permissions from the "Can Close" role, which in turn includes all permissions from the "Can Edit" role, providing a comprehensive access structure. By understanding and correctly managing these permissions, you can ensure a well-organized and efficient workflow within the system.

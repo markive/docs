@@ -5,3 +5,7 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Repo-level docs that aren't part of the site
+AGENTS.md
+CLAUDE.md

@@ -1,0 +1,149 @@
+---
+title: "Assignment rule - Process profile"
+description: "An Assignment Rule is a powerful feature that allows users to pre-assign data automatically when adding a new record. This ensures that the data remains editabl"
+---
+
+# **A Comprehensive Guide to Setting Up Assignment Rules**
+
+An Assignment Rule is a powerful feature that allows users to pre-assign data automatically when adding a new record. This ensures that the data remains editable, correctly assigned, and consistent with predefined criteria. In this guide, we'll cover how to configure and apply assignment rules effectively using the website interface.
+
+* * *
+
+##   
+**Why Use Assignment Rules?**
+
+Assignment rules help automate the assignment of records based on specific criteria, such as form status, attributes, or field data. They streamline workflows, ensure consistency, and reduce manual errors. Here’s a step-by-step guide on how to set up and use them.
+
+* * *
+
+**TABLE OF CONTENTS**
+
+-   [Step 1: Accessing Assignment Rules via the Website](#step-1%3a-accessing-assignment-rules-via-the-website)
+    -   [1\. Open the Menu](#1.-open-the-menu)[](#2.-open-the-form-viewer-page)
+    -   [2\. Open the Form Viewer Page](#2.-open-the-form-viewer-page)[](#3.-configure-the-rules)
+    -   [3\. Configure the Rules](#3.-configure-the-rules)[](#step-2%3a-configuring-the-assignment-rule)
+-   [Step 2: Configuring the Assignment Rule](#step-2%3a-configuring-the-assignment-rule)
+    -   [1\. Select Rule Operation Mode](#1.-select-rule-operation-mode)[](#2.-define-the-rule-parameters)
+    -   [2\. Define the Rule Parameters](#2.-define-the-rule-parameters)
+        -   [Form Status](#form-status)
+        -   [Assign Attributes](#assign-attributes)
+        -   [Form Data (Optional Condition)](#form-data-\(optional-condition\))[](#step-3%3a-finalizing-and-saving-the-assignment-rule)
+-   [Step 3: Finalizing and Saving the Assignment Rule](#step-3%3a-finalizing-and-saving-the-assignment-rule)
+-   [Additional Actions: Editing or Removing Rules](#additional-actions%3a-editing-or-removing-rules)
+    -   [To Edit a Rule](#to-edit-a-rule)[](#to-delete-a-rule)
+        
+    -   [To Delete a Rule](#to-delete-a-rule)  
+        
+-   [Key Points to Remember](#key-points-to-remember)
+-   [Conclusion](#conclusion)
+
+* * *
+
+#   
+**Step 1: Accessing Assignment Rules via the Website**
+
+# **1\. Open the Menu**
+
+-   Log in to the website.
+-   Click the menu icon in the top-left corner.![Assignment rule - Process profile](/images/kb/103000035120/3Bxi5DhS5eSkYVXfCSeCSenQuFyOWVPNzg.png)
+-   Go to **Settings > Categories** and select the appropriate category and subcategory.![Assignment rule - Process profile](/images/kb/103000035120/4oqv1TiUoJMqwUehNC3mO6FFVq57H63NdA.png)![Assignment rule - Process profile](/images/kb/103000035120/r-ImSkLWaIZdcbhoUd1kc0dY29nnA6-YLQ.png)
+
+###   
+**2\. Open the Form Viewer Page**
+
+-   In the Profile section, select the form you want to configure. Double-click on the form or use the Settings button to open the form viewer page.  
+    ![Assignment rule - Process profile](/images/kb/103000035120/7gFlqlSAozhcP2f5k3eDRm7yaI3NTLwcJA.png)
+
+###   
+**3\. Configure the Rules**
+
+-   Click on the three dots (⋮) and select the **Rules** button.  
+    ![Assignment rule - Process profile](/images/kb/103000035120/0S3MSlnGrNoO80MdeTC2fn3z5Rq1l95F6A.png)  
+    ![Assignment rule - Process profile](/images/kb/103000035120/xbXM1qe7MkoV_vqBfqJEpfOWiFejpjsWtw.png)
+-   To add a new rule, press the **ADD** button.  _To modify an existing rule, click on the rule to edit it._  
+    ![Assignment rule - Process profile](/images/kb/103000035120/F72Bws5gxjHXU39DyK9k3bm5wHdKevDNcA.png)
+
+* * *
+
+##   
+**Step 2: Configuring the Assignment Rule**
+
+## **1\. Select Rule Operation Mode**
+
+There are four types of rule operation modes: **ASSIGN**, **SUBSCRIBE**, **UNSUBSCRIBE**, and **CHANGE CONTROLLER**. For this guide, we’ll focus on the **ASSIGN** mode.  
+![Assignment rule - Process profile](/images/kb/103000035120/THsZbH4Uc0d_Ivpcw66JoO8SSr5dIjxq0Q.png)
+
+###   
+**2\. Define the Rule Parameters**![Assignment rule - Process profile](/images/kb/103000035120/YxodNqEQGCSCrxtVin8QD1aIJqNBYnDeiQ.png)
+
+#### **Form Status**
+
+-   Choose a form status that will trigger the assignment rule. The rule is activated when a record updates to the chosen status.  
+    ![Assignment rule - Process profile](/images/kb/103000035120/4c-YUUkCBMgcwCYKogdxhxHNx0J0eFF84Q.png)  
+    
+
+#### **Assign Attributes**
+
+-   Assign the form to a specific team or user. This is a required setting for every assignment rule. You have three assignment options:
+    -   **TEAM Assignment**: Select a team and specify the user(s) within that team.
+    -   **Field-Based Assignment**: Click **Add Field** and pick a team field or team + user field from the form. This option assigns the record based on the selected field value.  
+        _(Note: The rule will not be triggered if the data of selected User team and team field have no relationship.)_
+    -   **[Controller](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035073-what-is-controller-and-how-to-change-)**: Assign the record to the current controller.    
+        _([What is controller?](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035073-what-is-controller-and-how-to-change-))_
+
+  
+In this guide, we’ll use **TEAM** as an example, assigning the form to the entire "Management" team.**![Assignment rule - Process profile](/images/kb/103000035120/r9RlJQTItHE5y1q9W3jgv_ZTdvy8whsY0Q.png)**  
+
+#### **Form Data (Optional Condition)**  
+The Form Data optional condition allows you to add specific criteria based on field data within the form. By setting these conditions, you can further refine when the assignment rule is triggered, ensuring that records are assigned only if they meet the defined field values. This feature provides more control and flexibility in automating record assignments based on form content.
+
+-   Add extra conditions based on field data, if desired:
+    -   Click **Edit** to access the conditions.  
+        ![Assignment rule - Process profile](/images/kb/103000035120/66bsgr3J-ThfGfr8FrBQfB5W5JEMFPC6fQ.png)
+    -   Select **Add** to define the condition, choosing the relevant form field(s) and specifying values.  
+        ![Assignment rule - Process profile](/images/kb/103000035120/0B61RnOpx9i31lbjPdUG2lPROmL0a8SYGQ.jpeg)![Assignment rule - Process profile](/images/kb/103000035120/8iLS6BjmoIw7uSssBAebXUFH-RZqN_S05g.png)![Assignment rule - Process profile](/images/kb/103000035120/C1UXTq7ComtKakjoO6xfzm_bwTBhZcHPQA.jpeg)  
+        
+    -   _There are operator options based on the data type, such as **contain**, **equal**, **empty**, **filled**, or **range**, which you can select if needed._  
+        ![Assignment rule - Process profile](/images/kb/103000035120/6N5GlkbwrviauKDT3pKGSZ5IJjnE2SlmAA.png)  
+        ![Assignment rule - Process profile](/images/kb/103000035120/D_bw7gdXesGtsqoVRCkosaXltjaN5lGXWQ.png)
+    -   Click **OK** to confirm.![Assignment rule - Process profile](/images/kb/103000035120/JpRYkcNbFYW2xSAMYApf6iusdoLP4UKf1g.jpeg)
+
+* * *
+
+##   
+**Step 3: Finalizing and Saving the Assignment Rule**
+
+After defining all the rule elements, click **OK** to save. Your new assignment rule is now added.  
+![Assignment rule - Process profile](/images/kb/103000035120/7xeUVGpH2OgXkWomXKw4fCZcM_AuWm_FOw.png)  
+![Assignment rule - Process profile](/images/kb/103000035120/ZPZRRJokmPAdGds3ITe6HkR6ch_cxWUWhg.png)
+
+* * *
+
+##   
+**Additional Actions: Editing or Removing Rules**
+
+#### **To Edit a Rule**
+
+-   Click directly on the rule, make the necessary changes, and click **OK** to save.  
+    ![Assignment rule - Process profile](/images/kb/103000035120/V9ZGXjrnyMs0EokV9-Ekb2VG0JKtA0NcGA.png)![Assignment rule - Process profile](/images/kb/103000035120/FvKn4MNXjv1BqUBjZ4AD8StV8RhnJn6xAA.png)
+
+#### **To Delete a Rule**
+
+-   If you need to delete a rule, click the **Delete Rule** button at the bottom left of the dialog box.![Assignment rule - Process profile](/images/kb/103000035120/54HeeiWdgVJQPGCqGlRYfUPQIRNgYV4J6w.png)
+
+Click on the blank area of the page to exit the configuration screen.
+
+* * *
+
+##   
+**Key Points to Remember**
+
+-   **[Form Status](#form-status)** and **[Assign Attributes](#assign-attributes)** are mandatory for every assignment rule.
+-   **[Form Data is optional and only needed if you want to add field-based conditions.](#form-data-\(optional-condition\))**
+
+* * *
+
+##   
+**Conclusion**
+
+Assignment rules provide an efficient way to streamline record assignments, automate processes, and ensure data integrity. By following these steps, you can configure assignment rules tailored to your project’s needs, reducing manual effort and improving workflow consistency.

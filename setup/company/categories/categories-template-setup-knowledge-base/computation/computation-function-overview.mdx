@@ -1,0 +1,243 @@
+---
+title: "Computation Function Overview"
+description: "The Computation field module in RDrive is designed to help you create dynamic and efficient forms using 'computed fields.' This powerful functionality allows yo"
+---
+
+# **Computation Function Overview**
+
+The Computation field module in RDrive is designed to help you create dynamic and efficient forms using "computed fields." This powerful functionality allows you to define fields whose values are automatically calculated based on other fields within the form, simplifying data entry and analysis.
+
+* * *
+
+**TABLE OF CONTENTS**
+
+-   [Computation Function Overview](#computation-function-overview)
+    -   [Key Features of Computational Functions](#key-features-of-computational-functions)
+    -   [Benefits of Using Computation](#benefits-of-using-computation)
+        -   [Mathematical Functions](#mathematical-functions)
+        -   [Statistical Functions](#statistical-functions)
+        -   [Logical Functions](#logical-functions)
+        -   [Text Functions](#text-functions)
+        -   [Date and Time Functions](#date-and-time-functions)
+        -   [Financial Functions](#financial-functions)
+        -   [Lookup and Reference Functions](#lookup-and-reference-functions)
+        -   [Information Functions](#information-functions)
+        -   [Engineering and Conversion Functions](#engineering-and-conversion-functions)
+        -   [Array and Matrix Functions](#array-and-matrix-functions)
+        -   [Logical and Conditional Functions](#logical-and-conditional-functions)
+        -   [Statistical Functions (Extended)](#statistical-functions-\(extended\))
+        -   [Financial Functions (Extended)](#financial-functions-\(extended\))
+        -   [Date and Time Functions (Extended)](#date-and-time-functions-\(extended\))
+    -   [List:](#list%3a)
+
+* * *
+
+### **Key Features of Computational Functions**
+
+-   **Versatility**: These functions cover a wide range of applications, including mathematical calculations, text manipulation, statistical analysis, logical operations, and date/time handling.
+    
+-   **Automation**: By incorporating these functions, you can automate repetitive tasks, reducing manual intervention and improving overall workflow efficiency.
+    
+-   **Precision**: Computational functions deliver accurate results, minimizing the risk of manual calculation errors and ensuring data integrity.
+    
+
+* * *
+
+**_Important Notes for Efficient Use of Computation Functions_**
+
+-   _**Avoid Referencing Entire Columns**: Do **NOT** use references like A:A or B:C (referencing entire columns) in your formulas. This practice can significantly degrade performance, especially in large datasets. Always specify a defined range that contains meaningful data (e.g., A1:A100) to ensure your computations run efficiently._
+    
+-   _**Merged Preset Spreadsheets**: Be aware that if you have a spreadsheet with a merged preset, any data added to a sheet with the same title will override the existing content._
+    
+-   _**Triggered Calculations**: Computed values in RDrive only update when the input value they depend on is edited. This means that if a source value changes, the computed field will reflect this change automatically, ensuring that outputs remain current without manual updates._
+    
+-   _**Avoid Using the Same Field for Input and Output**: Do not configure a field to act as both input and output simultaneously. This can lead to circular references and unexpected behavior in computations._
+    
+-   _**Output Fields and Conditional Editing**: Output fields function based on the conditional editing rules set up. If a field is not editable in its current status, the output will not display. Ensure conditional editing rules are correctly configured for the desired behavior._
+    
+
+* * *
+
+## **Benefits of Using Computation**
+
+The Computation module brings the power of formula-based logic directly into your form designs. By leveraging computed fields, you can automate complex calculations, reduce manual data entry errors, and enhance the efficiency of your data collection process.
+
+RDrive's Computation module supports many of the formulas familiar to users of Excel, allowing for easy adaptation and application of existing knowledge. Below is a comprehensive list of 166 computation functions categorized with their descriptions for easy reference.
+
+-   **Mathematical Functions**
+    -   **ABS**: Returns the absolute value of a number.
+    -   **ACOS**: Returns the arccosine of a number.
+    -   **ACOSH**: Returns the inverse hyperbolic cosine of a number.
+    -   **ASIN**: Returns the arcsine of a number.
+    -   **ASINH**: Returns the inverse hyperbolic sine of a number.
+    -   **ATAN**: Returns the arctangent of a number.
+    -   **ATAN2**: Returns the arctangent from the coordinates (x, y).
+    -   **ATANH**: Returns the inverse hyperbolic tangent of a number.
+    -   **CEILING**: Rounds a number up to the nearest multiple of a specified significance.
+    -   **FLOOR**: Rounds a number down to the nearest multiple of a specified significance.
+    -   **FLOOR.MATH**: Rounds a number down to the nearest multiple of a specified significance.
+    -   **MOD**: Returns the remainder after a number is divided by a divisor.
+    -   **POWER**: Returns the result of a number raised to a power.
+    -   **PRODUCT**: Returns the product of a range of numbers.
+    -   **ROUND**: Rounds a number to a specified number of digits.
+    -   **ROUNDDOWN**: Rounds a number down to the nearest specified digit.
+    -   **ROUNDUP**: Rounds a number up to the nearest specified digit.
+    -   **SQRT**: Returns the square root of a number.
+    -   **SUM**: Adds all the numbers in a range.
+    -   **SUMIF**: Adds all the numbers in a range that meet a specified condition.
+    -   **SUMIFS**: Adds all the numbers in a range that meet multiple conditions.
+    -   **SUMPRODUCT**: Multiplies corresponding components in given ranges and sums those products.
+    -   **SUMSQ**: Returns the sum of the squares of a set of numbers.
+    -   **TRUNC**: Truncates a number to an integer by removing the fractional part.
+-   **Statistical Functions**
+    -   **AVEDEV**: Returns the average of the absolute deviations of data points from their mean.
+    -   **AVERAGE**: Returns the average (arithmetic mean) of the arguments.
+    -   **AVERAGEIF**: Returns the average of a range based on a condition.
+    -   **AVERAGEIFS**: Returns the average of a range based on multiple conditions.
+    -   **COUNT**: Counts the number of cells that contain numbers.
+    -   **COUNTA**: Counts the number of cells that are not empty.
+    -   **COUNTBLANK**: Counts the number of empty cells in a range.
+    -   **COUNTIF**: Counts the number of cells that meet a condition.
+    -   **COUNTIFS**: Counts the number of cells that meet multiple conditions.
+    -   **DEVSQ**: Returns the sum of squares of deviations of data points.
+    -   **LARGE**: Returns the k-th largest value in a data set.
+    -   **MEDIAN**: Returns the median value of a set of numbers.
+    -   **MIN**: Returns the smallest value in a set of values.
+    -   **MINA**: Returns the smallest value in a set of values, including logical values.
+    -   **MAX**: Returns the largest value in a set of values.
+    -   **MAXA**: Returns the largest value in a set of values, including logical values.
+    -   **NORM.INV**: Returns the inverse of the normal distribution for a specified mean and standard deviation.
+    -   **NORMDIST**: Returns the normal distribution for a specified mean and standard deviation.
+    -   **NORMINV**: Returns the inverse of the normal distribution.
+    -   **NORMSDIST**: Returns the standard normal distribution (mean = 0, standard deviation = 1).
+    -   **NORMSINV**: Returns the inverse of the standard normal distribution.
+    -   **STDEV**: Returns the standard deviation of a set of values.
+    -   **VAR.P**: Returns the variance of a population based on the entire population.
+-   **Logical Functions**
+    -   **AND**: Returns TRUE if all arguments are TRUE.
+    -   **IF**: Returns one value if a condition is TRUE and another value if FALSE.
+    -   **IFERROR**: Returns a value if there is no error, and a specified value if an error is found.
+    -   **IFNA**: Returns a value if a condition is TRUE, and another if the value is #N/A.
+    -   **NOT**: Reverses the logic of its argument (TRUE becomes FALSE and vice versa).
+    -   **OR**: Returns TRUE if any argument is TRUE.
+    -   **TRUE**: Returns the logical value TRUE.
+    -   **FALSE**: Returns the logical value FALSE.
+-   **Text Functions**
+    -   **CHAR**: Returns the character specified by a number.
+    -   **CLEAN**: Removes all non-printable characters from a text string.
+    -   **CODE**: Returns the numeric value of the first character in a text string.
+    -   **CONCATENATE**: Joins several text items into one text string.
+    -   **EXACT**: Compares two text strings and returns TRUE if they are exactly the same.
+    -   **FIND**: Finds one text string within another and returns the position.
+    -   **LEFT**: Returns the first characters from the left of a text string.
+    -   **LEN**: Returns the number of characters in a text string.
+    -   **LOWER**: Converts a text string to lowercase.
+    -   **MID**: Returns a specific number of characters from the middle of a text string.
+    -   **PROPER**: Capitalizes the first letter of each word in a text string.
+    -   **REPLACE**: Replaces part of a text string with another text string.
+    -   **REPT**: Repeats a text string a given number of times.
+    -   **RIGHT**: Returns the last characters from the right of a text string.
+    -   **SUBSTITUTE**: Substitutes new text for old text in a text string.
+    -   **TEXTJOIN**: Joins multiple text strings with a delimiter.
+    -   **TRIM**: Removes extra spaces from a text string.
+    -   **UPPER**: Converts a text string to uppercase.
+-   **Date and Time Functions**
+    -   **DATE**: Returns the serial number of a date.
+    -   **DATEVALUE**: Converts a date in text format to a serial number.
+    -   **DAY**: Returns the day of the month from a date.
+    -   **DAYS360**: Calculates the number of days between two dates based on a 360-day year.
+    -   **EDATE**: Returns the date that is a specified number of months before or after a specified date.
+    -   **EOMONTH**: Returns the last day of the month that is the specified number of months before or after a given date.
+    -   **HOUR**: Returns the hour as a number (from 0 to 23) from a time value.
+    -   **MINUTE**: Returns the minute portion of a time.
+    -   **NOW**: Returns the current date and time.
+    -   **SECOND**: Returns the second portion of a time.
+    -   **TIME**: Returns the number that represents a time.
+    -   **TODAY**: Returns the current date.
+    -   **WEEKDAY**: Returns the day of the week as a number.
+    -   **WEEKNUM**: Returns the week number of the year.
+    -   **YEAR**: Returns the year from a date.
+    -   **YEARFRAC**: Returns the year fraction representing the number of whole days between two dates.
+-   **Financial Functions**
+    -   **FV**: Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
+    -   **NPER**: Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
+    -   **NPV**: Returns the net present value of an investment based on a series of periodic cash flows.
+    -   **PMT**: Returns the payment for a loan based on constant payments and a constant interest rate.
+    -   **PPMT**: Returns the principal payment for a specified period of an investment.
+    -   **RATE**: Returns the interest rate per period of an annuity.
+    -   **PV**: Returns the present value of an investment based on periodic, constant payments and a constant interest rate.
+-   **Lookup and Reference Functions**
+    -   **CHOOSE**: Returns a value from a list of values based on an index number.
+    -   **INDEX**: Returns a value from a table or range based on row and column numbers.
+    -   **MATCH**: Searches for a value in a range and returns its relative position.
+    -   **OFFSET**: Returns a range of cells that is a specified number of rows and columns from a starting cell.
+    -   **VLOOKUP**: Searches for a value in the first column of a table and returns a value in the same row from a specified column.
+    -   **HLOOKUP**: Searches for a value in the first row of a table and returns a value in the same column from a specified row.
+-   **Information Functions**
+    -   **ISBLANK**: Returns TRUE if a cell is empty.
+    -   **ISERROR**: Returns TRUE if a value is any error.
+    -   **ISEVEN**: Returns TRUE if a number is even.
+    -   **ISNUMBER**: Returns TRUE if a value is a number.
+    -   **ISODD**: Returns TRUE if a number is odd.
+-   **Engineering and Conversion Functions**
+    -   **BIN2DEC**: Converts a binary number to decimal.
+    -   **DEC2BIN**: Converts a decimal number to binary.
+    -   **DEC2HEX**: Converts a decimal number to hexadecimal.
+    -   **OCT2DEC**: Converts an octal number to decimal.
+    -   **HEX2DEC: Converts a hexadecimal number to a decimal number.**
+    -   **DELTA**: Tests whether two numbers are equal. Returns 1 if they are; otherwise, returns 0.
+    -   **IMAGINARY**: Returns the imaginary coefficient of a complex number.
+    -   **IMREAL**: Returns the real coefficient of a complex number.
+    -   **COMPLEX**: Converts real and imaginary coefficients into a complex number.
+-   **Array and Matrix Functions**
+    -   **TRANSPOSE**: Returns the transpose of an array.
+    -   **MMULT**: Returns the matrix product of two arrays.
+    -   **MINVERSE**: Returns the inverse of a matrix.
+    -   **MDETERM**: Returns the determinant of a matrix.
+-   **Logical and Conditional Functions**
+    -   **SWITCH**: Evaluates an expression against a list of values and returns the result corresponding to the first match.
+    -   **IFS**: Checks multiple conditions and returns a value corresponding to the first TRUE condition.
+    -   **Miscellaneous Functions**
+    -   **COLUMN**: Returns the column number of a reference.
+    -   **ROW**: Returns the row number of a reference.
+    -   **RADIANS**: Converts degrees to radians.
+    -   **DEGREES**: Converts radians to degrees.
+    -   **RAND**: Returns a random number between 0 and 1.
+    -   **RANDBETWEEN**: Returns a random integer between two specified values.
+    -   **TEXT**: Formats a number and converts it to text.
+    -   **DOLLARDE**: Converts a dollar price expressed as a fraction into a decimal.
+    -   **DOLLARFR**: Converts a dollar price expressed as a decimal into a fraction.
+    -   **QUOTIENT**: Returns the integer portion of a division, discarding the remainder.
+    -   **ROMAN**: Converts an Arabic numeral to Roman, as text.
+-   **Statistical Functions (Extended)**
+    -   **SLOPE**: Returns the slope of the linear regression line.
+    -   **INTERCEPT**: Returns the intercept of the linear regression line.
+    -   **SMALL**: Returns the k-th smallest value in a data set.
+    -   **STANDARDIZE**: Returns a normalized value based on mean and standard deviation.
+-   **Financial Functions (Extended)**
+    -   **IRR**: Returns the internal rate of return for a series of cash flows.
+    -   **MIRR**: Returns the modified internal rate of return for a series of cash flows, considering financing and reinvestment rates.
+-   **Date and Time Functions (Extended)**
+    -   **NETWORKDAYS**: Returns the number of whole workdays between two dates.
+    -   **WORKDAY**: Returns the date before or after a specified number of workdays. 
+-   **Not fully recorded.**
+
+* * *
+
+### [Click here to view an example of how to set up the computation for calculating the amount in the Purchase Order.](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000322969-computation-best-practices-in-finance-accounting)
+
+####   
+**List:**
+
+Attached is the complete list of supported function in RDrive.
+
+Attachments (1)
+
+[
+
+rtf
+
+Function.rtf  
+1.61 KB
+
+](/helpdesk/attachments/103168711786)

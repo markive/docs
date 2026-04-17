@@ -1,0 +1,54 @@
+---
+title: "How can I configure computation in my RDrive forms?"
+description: "A brief introduction explaining the purpose of this guide."
+---
+
+### **Overview**
+
+_A brief introduction explaining the purpose of this guide._
+
+-   **Purpose:** Explain what computation and how it works within RDrive forms
+-   **Who It’s For:** Admins
+
+<Note>
+Prerequisites: Admin at company level, able to edit forms
+</Note>
+
+* * *
+
+## **Step-by-Step Instructions**
+
+### **✅ Step 1: Accessing the computation**
+
+1.  To view and access the form computation, at company level go to the settings and categories and find the form you wish to change, click the “Wand” icon to access the form wizard.
+2.  From  the form wizard, click the three dot menu in the top right and select “Computation”
+3.  This will then open the computation window, from here you can click “View” in the top right to see the spreadsheet attached to the form, opening this will then allow you to click the three dot menu and select “Download”, meaning we can now make any changes required to the spreadsheet and re-upload.
+
+### **✅ Step 2: Editing the spreadsheet**
+
+1.  Once downloaded we can access the spreadsheet in excel and make any required changes, - Please note you should always download and open the newest version of this spreadsheet every time.
+2.  From here Enable editing at the top and you can view and make changes within the spreadsheet, data entered into the form will then reflect into the sheet, from the “Computation” Window we can see “Cell 01.01” input data is linked to Cell “B3” in Sheet 1, meaning data added to cell B3 relates to this data, adding a value to this cell will then reflect in the totals in B13.
+3.  meaning: Data entered into B3 will be totalled in B13, this is due to the formula in B13 =IFERROR(AVERAGEIF(B3:B10,"&lt;>0"),0) meaning the total for cells b3 to b10 are calculated and shown as an OUTPUT in cell B13.
+4.  We can see where the outputs lead and are mapped by clicking the output button in the computation window
+5.  This will show the output locations for the cells in the sheet, scrolling down we can see any output cells mapped:
+    
+    From here we can see that the “01 Overall Score” output is located in Sheet 1 cell B13
+    
+
+### **✅ Step 3: Inputs & Outputs** 
+
+1.  The computation is broken down into 2 spreadsheets that control the values for the form, inputs are values we manually add when carrying out a form or inspection - for example;
+    
+    Any information that we enter into the spreadsheet is typically an input, logging a result or value to a field which is then displayed as an output of some kind within the sheet.
+    
+2.  The result of an output can vary but is typically the sum or total of input data that is calculated and displayed for ease of access without the need for manual calculations.
+    
+    For example, we enter scores from 0 to 5 in cells B3 to B10 as our INPUT data, the OUTPUT is then set to generate the “Overall Score” OUTPUT in cell B13 as an average
+    
+3.  We can then see that the value we can add for cell B3 is related to the question in the form 01.01 under the “Score” with the weight values that can be added under Integer attributes with a range of 0 to 5.
+    
+    Meaning that the results entered into the score on question 01.01 will reflect in cell B3 and vice versa.
+    
+4.  The code in the left column will always relate to an input value needed, meaning the value entered against question “01.01 Adequate segregation between pedestrian & vehicle traffic routes? ” are shown in the score on the end column.
+    
+    This is reflected in the spreadsheet in the same area, with column “B” being the values or scores added against the question.

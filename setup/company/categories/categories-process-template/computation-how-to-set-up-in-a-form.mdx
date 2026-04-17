@@ -1,0 +1,149 @@
+---
+title: "Computation: How to Set Up in a Form"
+description: "Computation is a module designed to assist you in creating forms with 'computed fields.' These fields calculate their values based on other fields’ inputs, simi"
+---
+
+# **What is Computation?**
+
+**Computation** is a module designed to assist you in creating forms with "computed fields." These fields calculate their values based on other fields’ inputs, similar to Excel formulas.
+
+### Supported Formulas
+
+Most Excel formulas can be applied in Computation on RDrive, including:
+
+-   `SUM`
+    
+-   `VLOOKUP`
+    
+-   `AVERAGE`
+    
+-   `LEN`
+    
+-   `IF`
+    
+
+* * *
+
+**_Important Notes for Efficient Use of Computation Functions_**
+
+-   _**Avoid Referencing Entire Columns**: Do **NOT** use references like A:A or B:C (referencing entire columns) in your formulas. This practice can significantly degrade performance, especially in large datasets. Always specify a defined range that contains meaningful data (e.g., A1:A100) to ensure your computations run efficiently._
+    
+-   _**Merged Preset Spreadsheets**: Be aware that if you have a spreadsheet with a merged preset, any data added to a sheet with the same title will override the existing content._
+    
+-   _**Triggered Calculations**: Computed values in RDrive only update when the input value they depend on is edited. This means that if a source value changes, the computed field will reflect this change automatically, ensuring that outputs remain current without manual updates._
+    
+-   _**Avoid Using the Same Field for Input and Output**: Do not configure a field to act as both input and output simultaneously. This can lead to circular references and unexpected behavior in computations._
+    
+-   _**Output Fields and Conditional Editing**: Output fields function based on the conditional editing rules set up. If a field is not editable in its current status, the output will not display. Ensure conditional editing rules are correctly configured for the desired behavior._
+    
+-   _**Template's Spreadsheets Size Limit:** 100KB_
+    
+
+* * *
+
+# **Setting Up Computation for** **a Form** - (Using a Petty Cash Report as an Example)
+
+### **Step 1: [Design the Form Layout](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035050-how-to-update-the-process-template-form-)**
+
+1.  Edit or create fields and [assign field types](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035048-field-properties) using the **Form Wizard**.![Computation: How to Set Up in a Form](/images/kb/103000035014/gOU4sLLbgH4xi6TJGHk0uidGgqedHM07Dg.png)
+    
+2.  Design the form layout in the [Form Wizard](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035051-what-can-i-do-at-the-form-wizard-).  
+      
+    **Tips:** To make the _Output_ field uneditable manually, [you may set the field type to Read Only](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035048-field-properties).  
+    _The following field types are NOT supported as output values:_
+    
+    -   _Image_
+    -   _Signature_
+    -   _List (team, user, list)_
+    -   _Checkbox_
+    -   _Pass/Fail/NA_  
+        ![Computation: How to Set Up in a Form](/images/kb/103000035014/GTGQxYy6asyw-MJ4Dj8gaxOPKyKGDdIBAw.png)
+
+### **Step 2: Access the Computation Dialogue**
+
+-   Use **⌘/Ctrl + 6** or select **Computation** from the ⋮ (More Tools) menu to open the dialogue.![Computation: How to Set Up in a Form](/images/kb/103000035014/eOqecMrzg2vAL8-9rN04do5jFLXBdAJmUQ.png)![Computation: How to Set Up in a Form](/images/kb/103000035014/F6tV2bfAduuRXklf-IrcKDqWynlEC2dB1A.png)
+    
+
+### **Step 3: Edit the Spreadsheet**
+
+1.  Click **EDIT** to open the spreadsheet.![Computation: How to Set Up in a Form](/images/kb/103000035014/h3Nz8_8t4XPujah2ChFDYB-__hNiXTkPKw.png)
+    
+2.  Download the Excel template via the ⋮ menu in the Computation dialogue.![Computation: How to Set Up in a Form](/images/kb/103000035014/qITaqwrEfYM0hIKrvzUzuD1wcWr2ENep2w.png)![Computation: How to Set Up in a Form](/images/kb/103000035014/aWItJ5-OZBsGgqJvz9t1QZafeQ5cj0m64w.png)
+    
+3.  Open the downloaded Excel file.
+    
+4.  Design the input and output cells, and enter the desired formulas.    
+    _Template's Spreadsheets Size Limit: 100KB_  
+     [](https://docs.google.com/spreadsheets/d/1SZNsOQgeplDtkI145yIQ3XVC9qsXWnWp/edit?usp=sharing&ouid=104843957967887312407&rtpof=true&sd=true)[_(Click here to download the practice Excel file.)_](https://docs.google.com/spreadsheets/d/1SZNsOQgeplDtkI145yIQ3XVC9qsXWnWp/edit?usp=sharing&ouid=104843957967887312407&rtpof=true&sd=true)![Computation: How to Set Up in a Form](/images/kb/103000035014/5xEa6f_f4PNbIY7WGiMNQaXGA9wTCPfKDg.png)
+    
+5.  Save your edits in Excel and upload the file back into RDrive.![Computation: How to Set Up in a Form](/images/kb/103000035014/Zyomk17cXrUbyzKx66rFr0cksQwcxdH2dQ.png)
+    
+6.  The Excel file has been uploaded. Please review the spreadsheet. If any functions are not applicable, an error message will appear.
+    
+    The spreadsheet will save automatically. Click the **X** icon to return to the computation dialogue.![Computation: How to Set Up in a Form](/images/kb/103000035014/ueeEG5PuxASqnvxw9jMomqeQnejiNdl44g.png)
+    
+
+⚠️ **Warning:** Avoid creating or edit the spreadsheet directly on the web. Always use the downloaded Excel file to ensure formula compatibility.
+
+### **Step 4: Map Fields to Spreadsheet Cells**
+
+1.  Assign input and output values:
+    
+    -   **Input Fields:** Any field type.
+        
+    -   **Output Fields:** Any field type except image, signature, team list, user list, or dropdown list.
+        
+2.  Click **Select** in the Computation dialogue to map form fields to spreadsheet cells.![Computation: How to Set Up in a Form](/images/kb/103000035014/X1J8EVEZRzp8JeR6HUpSP5FOjVlkiFDqcA.png)
+    
+3.  Highlight fields in blue by clicking on them.
+    
+4.  Press **✔** (bottom-right corner) to confirm, or click outside the dialogue to cancel.![Computation: How to Set Up in a Form](/images/kb/103000035014/pMfgujq6XIUUOSGM1cfR0CAreJLmSRWI-w.png)
+    
+
+### **Step 5: Finalize the Setup**
+
+1.  Complete input and output mapping.![Computation: How to Set Up in a Form](/images/kb/103000035014/MRnXZKa7Qwo48vTIy_cZmegfgwwO6MqVCQ.png)![Computation: How to Set Up in a Form](/images/kb/103000035014/PYzDWUrJ912qwVHIdkHgoI34tcnOZGdTKA.png)![Computation: How to Set Up in a Form](/images/kb/103000035014/uAJ5jAc88WWqejRBcxkFHVNITuZmSC6k6Q.png)
+    
+2.  Input Completed.
+    
+    Please repeat the above steps for the Output to assign values. Click OK to finish.
+    
+    ![Computation: How to Set Up in a Form](/images/kb/103000035014/BSDDdqlLjOxCmyHkwxdb3i1EhBMC6rmRyA.png)![Computation: How to Set Up in a Form](/images/kb/103000035014/DiezaORXbDkcipcJXUCv8aDG9HFuOl7JKQ.png)![Computation: How to Set Up in a Form](/images/kb/103000035014/p-LOduWdzTq2bQ9_8mnLY8qmMf6hJPYZUg.png)
+3.  Save the configuration.![Computation: How to Set Up in a Form](/images/kb/103000035014/AYiwkFJnx-6yCtN89YHYRh1uVYJaF3e8xQ.png)
+    
+4.  [Don't forget to click Publish to apply the updates to the form.](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035068-create-a-process-template-with-form#h_acd539a98d)
+    
+
+The GIF below demonstrates the mapping steps for your reference.
+
+![Computation: How to Set Up in a Form](/images/kb/103000035014/AzXN8944WDSWdal-_L7l9uwp-FvhKjpxJw.gif)
+
+  
+
+  
+
+* * *
+
+## **Example of Computed Field Behavior**
+
+**Scenario:**
+
+-   Field: `Total`
+    
+-   Formula: `SUM` of values entered in the `Amount` field.
+    
+
+The value in the `Total` field automatically updates whenever the `Amount` values change.
+
+![Computation: How to Set Up in a Form](/images/kb/103000035014/Mcq2E_veUgCwdmhx4K1_Bhyq2HBL9wUHuA.gif)
+
+* * *
+
+## **Additional Resources**
+
+-   [Set up computation for the issue template](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035013-computation-issue)
+    
+-   [Edit spreadsheets at the project level](https://snagr-support.freshdesk.com/en/support/solutions/articles/103000035012-preset-spreadsheet-add-and-merge-with-the-template-company-level-)
+    
+
+If you have further questions, contact support for assistance.

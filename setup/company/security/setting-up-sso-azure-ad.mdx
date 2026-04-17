@@ -1,0 +1,151 @@
+---
+title: "Setting up SSO - Azure AD"
+description: "Login to RDrive Company Level"
+---
+
+# This article shows you how to add an Azure AD as an Identity Provider for SSO (Single Sign-on).
+
+1.  [Setting up Azure AD for SSO:](#setting-up-azure-ad-for-sso%3a)
+2.  [Create user:](#create-user%3a)
+3.  [Edit the newly created user:](#edit-the-newly-created-user%3a)
+4.  [Register RDrive as an application:](#register-rdrive-as-an-application%3a)
+5.  [Create a new client secret:](#create-a-new-client-secret%3a)
+6.  [Token configuration:](#token-configuration%3a)
+7.  [Back to Overview:](#back-to-overview%3a)
+
+* * *
+
+## Setting up Azure AD for SSO:
+
+1.  Login to RDrive Company Level
+    
+2.  From the navigation menu choose: Security > OpenID  
+      
+    
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/aB5X-ShUDFwn1k5MYG_nbkrE59G0UtzdwA.png)
+
+3\. Choose 'Add Identity Provider' using the + button.  
+  
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/IiSn6Y0A5TaWwsTPMruMWL6taor9DZGnkA.png)
+
+  
+4\. Copy the callback URL.  
+  
+
+Next please log in to your Azure for the following process.
+
+* * *
+
+## Create user:
+
+1.  Go to the active directory page.
+    
+2.  Users from the left side menu.
+    
+3.  Create new user, not invite, so that the user is managed by the Azure AD.
+    
+4.  **Fill in the First name and Last name!** These are mandatory information for Okta to create a new user.  
+      
+    
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/HIPIX_4ypeOSsq6R9pXr-fh46xzq0H24CQ.png)
+
+* * *
+
+## Edit the newly created user:
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/cQ9ng07X2stimMBw5s2Izu-nxOnLRbaf_g.png)
+
+1.  Click Edit to allow editing.
+    
+2.  Fill in the Email field.
+    
+3.  Save changes (right to the Edit button).  
+      
+    
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/DN0wu-sJAw82M6HkayyZQYYHx7VSP_yBjg.png)
+
+* * *
+
+## Register RDrive as an application:
+
+1.  Back to the active directory page. Click **App registrations** from the menu on the left-hand side.
+    
+2.  **New registration.**
+    
+3.  Create a new APP, and name it. Leave the redirect URI blank, will add one later.  
+      
+    
+    ![Setting up SSO - Azure AD](/images/kb/103000035008/CRwc0JXv4BXJskp2hmGPi6WfdkLc1SZzmg.png)  
+      
+    
+4.  Go to Overview of the newly created APP.
+    
+5.  **Copy** the client ID, and store it for later use.  
+      
+    
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/gpYZXuXlkNtOWOXeFYCG59ptzyj4EQwXZQ.png)
+
+* * *
+
+## Create a new client secret:
+
+1.  Click **Certificates & secrets**
+    
+2.  Create a **New client secret.**  
+      
+    
+    ![Setting up SSO - Azure AD](/images/kb/103000035008/E0zslc2myjIKGb7GNU0wC0n55deHRZaQTg.png)  
+      
+    
+3.  Copy the circled value, and store it for later use. (✨The secret is shown only once)  
+      
+    
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/7ftpWkDbnbtzP99hDcrqYLs4okvYnkmR9w.png)
+
+* * *
+
+## Token configuration:
+
+1.  Add optional claims to the ID token.
+    
+    (Options are shown only when you check the ID button.)  
+      
+    
+    ![Setting up SSO - Azure AD](/images/kb/103000035008/aQ9Lmdlmjl1yJFfqRPCrRvL2t5gJCs4Hjg.png)  
+      
+    
+2.  Upon clicking Add, it asks you to add the required permission. Check the box to agree.  
+      
+    
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/IEN2cjWxgG9IujZbkfeJpNAopaDdBbm4Xg.png)
+
+* * *
+
+## Back to Overview:
+
+1.  Go to Overview of the APP.
+    
+2.  Endpoints
+    
+3.  Get the OpenID configuration URI.  
+      
+    
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/0niizKT0BeZEj1xvy1FULZix3_J9M81aHA.png)
+
+  
+4\. Back to RDrive and now add a 'Title' (in case you have multiple identity providers), OpenID configuration URI, ClientID & Client secret.
+
+5\. When this is complete you can click 'Ok'
+
+Your new identity provider is now available to select from the dropdown list when adding or updating a User.  
+  
+
+![Setting up SSO - Azure AD](/images/kb/103000035008/6kw1tBSqK6r8DMfXaJ8dbPy64HTaADRRBQ.png)

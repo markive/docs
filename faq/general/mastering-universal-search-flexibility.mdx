@@ -1,0 +1,41 @@
+---
+title: "Mastering Universal Search Flexibility"
+description: "The 'Conditions' concept plays a pivotal role in both Universal Search and Permission Rules, providing the flexibility of utilizing AND / OR."
+---
+
+The "Conditions" concept plays a pivotal role in both Universal Search and Permission Rules, providing the flexibility of utilizing `AND` / `OR`.
+
+-   [Adding OR Conditions](#adding-or-conditions)
+-   [Adding AND Conditions](#adding-%e2%80%8band-conditions)
+
+# Universal Search
+
+To refine search results, multiple criteria, and conditions can be added.
+
+## Adding `OR` Conditions
+
+When employing the same criteria with different conditions in Universal Search, the results are amalgamated using the `OR` logic. For example:
+
+-   **Status:** `{Status title}` ; **Status:** `{Status title}` ; **Status:** `{Status title}`
+
+This will generate results for all specified statuses.
+
+![Mastering Universal Search Flexibility](/images/kb/103000255360/Cje60HqSDPyK5tBBjXMdpkt0RXOcSzlJHA.png)  
+
+* * *
+
+## Adding `AND` Conditions
+
+Utilizing different criteria with any conditions in Universal Search invokes the `AND` logic, returning results that meet all specified criteria. For example:
+
+-   **Drawing:** `{Drawing title}` ; **Status:** `{Status title}` ; **Created by user:** `{User name}`
+
+This will filter results that satisfy all given conditions.
+
+![Mastering Universal Search Flexibility](/images/kb/103000255360/31ijViJiaRyn83yJ7uW40HofV1s6BYjOXg.png)  
+
+<Note>
+Exception - Created date
+    
+Created date has a sub-condition of 'to' and 'from.' It returns     results within the date range (AND) by applying the same criteria     with different date conditions.
+</Note>

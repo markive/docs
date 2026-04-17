@@ -1,0 +1,32 @@
+---
+title: "When a field is 'Mandatory' in a form, will it force the user to fill it in before closing the form?"
+description: "By default, when you try to change the status of a form and you have not filled in all mandatory fields, you will be given a warning."
+---
+
+## Mandatory fields and form statuses
+
+By default, when you try to change the status of a form and you have not filled in all mandatory fields, you will be given a warning.
+
+![When a field is 'Mandatory' in a form, will it force the user to fill it in before closing the form?](/images/kb/103000035101/vjzre5zWyJM0hXc5q_FJFcbnM2wvGRjFjg.png)
+
+To actually enforce it so that the status cannot be changed without filling in all mandatory fields, you can add the "Mandatory required" option under the form change status and form close permissions.
+
+![When a field is 'Mandatory' in a form, will it force the user to fill it in before closing the form?](/images/kb/103000035101/zAI-2QhzNIJXuKZTd2Q5Ynca3jyyYLAfuw.png)
+
+![When a field is 'Mandatory' in a form, will it force the user to fill it in before closing the form?](/images/kb/103000035101/3zevw291P-EzudXz17JrXCBkAFLDn1gOPA.png)
+
+Now, mandatory fields are indeed mandatory and the status change is not allowed unless they have all been filled in.
+
+![When a field is 'Mandatory' in a form, will it force the user to fill it in before closing the form?](/images/kb/103000035101/-2rrocFAeFaF4DITY6Bb34g29JtvG0WHVQ.png)
+
+## Exceptions
+
+The check on mandatory fields will be bypassed under some circumstances.
+
+## Inactive mandatory fields due to conditional editing
+
+If the mandatory fields are not editable during the current status due to conditional editing, they are not considered active mandatory fields and are thus ignored. This allows you to change the status if there are mandatory fields that are meant for other parties in a different form status.
+
+## Mandatory fields that remain editable after status change
+
+If the mandatory fields are both editable in the current status and in the status you are about to change to, you will be allowed to change to that status without having to fill them in. When the mandatory fields remain editable in the next status, the check is not enforced since they can still be filled in after you change the status. However, if the mandatory fields are no longer editable after changing the status, the check will take place. This will always be the case for when you close the form since no fields are editable when a form is closed.

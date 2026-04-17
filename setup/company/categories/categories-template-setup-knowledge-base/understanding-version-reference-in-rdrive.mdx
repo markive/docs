@@ -1,0 +1,117 @@
+---
+title: "Understanding Version Reference in RDrive"
+description: "This guide explains the concept of Version Reference in RDrive and how it helps track fields across different versions of a form or template."
+---
+
+### **Overview**
+
+_This guide explains the concept of Version Reference in RDrive and how it helps track fields across different versions of a form or template._
+
+-   **Purpose:** To help users, administrators, and report builders understand how Version Reference works and how it impacts the management and analysis of data in RDrive.
+-   **Who It’s For:** Company admins, report builders, data analysts.  
+      
+      
+    
+
+<Note>
+Prerequisites: Access to form or issue templates via the Wizard interface.
+</Note>
+
+* * *
+
+  
+**TABLE OF CONTENTS**
+
+-   [What is Version Reference?](#what-is-version-reference?)
+-   [What Happens When You Create a New Version?](#what-happens-when-you-create-a-new-version?)
+-   [What Happens if I Change a Field's Type?](#what-happens-if-i-change-a-field's-type?)
+-   [Where to Edit Version Reference](#where-to-edit-version-reference)
+-   [Common Scenarios for Version Reference Management](#common-scenarios-for-version-reference-management)
+-   [FAQs & Troubleshooting](#faqs-&-troubleshooting)
+-   [Conclusion](#conclusion)
+
+* * *
+
+##   
+**What is Version Reference?**
+
+Version Reference is a unique identifier used to track and link fields across different versions of template. Whenever a new version of a form is created, new fields are generated. These new fields are completely separate from the old ones. However, the Version Reference connects the new fields with their counterparts from the previous version, ensuring data consistency for tracking and analysis purposes.
+
+## **What Happens When You Create a New Version?**
+
+Every time you create a new version, new fields are generated based on the old version. These new fields are completely separate from the old ones. The only thing that ties the new fields to the old ones is the Version Reference, which serves as a unique ID consisting of random letters and numbers. When you create a new version, all properties of the fields are copied over, including things like title and Version Reference.
+
+## **What Happens if I Change a Field's Type?**
+
+If you change a field's type (for example, from a text field to a dropdown list), the Version Reference ensures the system knows they are equivalent, even though the field types are different. You can edit the Version Reference to link the new field with the previous version’s field.
+
+## **Where to Edit Version Reference**
+
+You can view and edit Version References in the **template Wizard** for Forms or Issue.
+
+**To edit:**
+
+1.  Open the template Wizard.
+    
+2.  Select the field you want to update.
+    
+3.  In the **Metadata** section, locate the **Version Reference** field.
+    
+4.  If it shows **None**, click to assign it to a corresponding field from a previous version.
+    
+
+**e.g.**   
+**Form template**
+
+![Understanding Version Reference in RDrive](/images/kb/103000035106/O1K1Joqd50E1Rj8UZWJF3R6YfT10oxiqLg.jpeg)
+
+![Understanding Version Reference in RDrive](/images/kb/103000035106/B3SZt250RB281vpxQdeWzbpuk32G9IaMPA.jpeg)
+
+**Issue template**
+
+![Understanding Version Reference in RDrive](/images/kb/103000035106/MNcKRKpy7hJ_MuqUh9VN3pEukefobo8yGw.jpeg)
+
+![Understanding Version Reference in RDrive](/images/kb/103000035106/9PB_FXCsF3N8xpGdso4xpWM4ah7eXcbgnA.jpeg)
+
+  
+\- Version References can be edited **even after the template has been published**. This ensures you can go back and fix missing references without recreating the form.
+
+\- Version References always work **forward**, meaning **only new fields** can reference older ones—not the other way around.
+
+* * *
+
+## **Common Scenarios for Version Reference Management**
+
+1.  **Editing Fields Across Versions**: When you create a new version and want to maintain the connection between fields in the old and new versions, you can manually update the Version Reference. For example, when switching from a text field to a dropdown field, the Version Reference helps the system know they are meant to be the same field.  
+      
+    
+2.  **Handling Duplicates in Cloned or Copied Forms**: When you clone or copy a form, the Version Reference from the original form is retained. This can cause a “duplicate” Version Reference across different forms. In this case, manually resetting the Version Reference to "None" will indicate that these are new fields and not linked to the original form.  
+      
+    
+3.  **Version Reference in Data Analysis**: The Version Reference helps keep data from multiple versions consistent for analysis in tools like Power BI or when exporting to CSV files. This ensures that data from fields with different names or types can be grouped together.
+
+* * *
+
+## **FAQs & Troubleshooting**
+
+❓ **I’m not sure when I should edit the Version Reference. When is it necessary?**  
+✔️ You typically don't need to edit the Version Reference manually because it’s copied over with each new version. You only need to edit it if you delete a field and create a new one in its place. If the new field’s Version Reference shows “None,” you can manually select the corresponding field from the older version to link it properly.  
+  
+
+❓ **What should I do if I see "None" in the Version Reference?**  
+✔️ If you see “None” in the Version Reference for a field, this means the system does not recognize a link to an older version of the form. You should manually assign the correct Version Reference by choosing the corresponding field from the older version to ensure proper tracking.  
+  
+
+❓ **What if I cloned a form and the Version Reference is the same as the original form?**  
+✔️ If you clone or copy a form, the fields in the new form will inherit the same Version Reference. If these fields are not meant to be linked, you should reset the Version Reference to "None." This indicates that these are new, independent fields, not related to any older version.  
+  
+
+❓ **Can I edit the Version Reference after the template has been published?**  
+✔️ Yes, you can edit the Version Reference at any time, even after the template has been published. If you notice missing or incorrect Version References, you can go back to the older version of the form and correct them.
+
+* * *
+
+## **Conclusion**  
+  
+
+Version Reference is a powerful tool for tracking fields across different versions of forms. By managing Version References properly, you ensure that data remains consistent and analyzable, even as the form evolves. This is especially helpful when exporting data or using tools like Power BI for reporting and analysis.
