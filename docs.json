@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "RDrive Knowledge Base",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2E90FA",
+    "light": "#84CAFF",
+    "dark": "#175CD3"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -643,33 +643,28 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "rdrive.io",
+          "href": "https://rdrive.io",
+          "icon": "arrow-up-right-from-square"
         }
       ]
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/rdrive.svg",
+    "dark": "/logo/rdrive.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contact",
+        "href": "https://rdrive.io/contact"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Book a demo",
+      "href": "https://rdrive.io"
     }
   },
   "contextual": {
@@ -685,10 +680,6 @@
     ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
