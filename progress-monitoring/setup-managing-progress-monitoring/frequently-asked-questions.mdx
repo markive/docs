@@ -1,0 +1,256 @@
+---
+title: "Frequently Asked Questions"
+description: "This FAQ provides answers to common questions and troubleshooting guidance for RDrive Progress Monitoring."
+---
+
+![Frequently Asked Questions](/images/kb/103000410663/ehh_IOhwIiXm-YiRpnbjks8i_3rOsSJ0qg.png)
+
+### ![Frequently Asked Questions](/images/kb/103000410663/9CvVrjmMLMZZFCtaRNLTj0uO1LYcIRYfvw.png)
+
+# **Overview**
+
+This FAQ provides answers to common questions and troubleshooting guidance for RDrive Progress Monitoring.
+
+  
+
+Use the sections below to find help with Schedule setup and configuration, Progress calculations, Items and Task linking, Task Viewer, and Dashboards and reporting.
+
+  
+
+Where more detailed instructions are available, links to the relevant guides are provided.
+
+  
+
+Category
+
+Section / Area
+
+Covers
+
+**Schedule Setup & Configuration**
+
+Schedule, Task Sets
+
+Creating schedules, multiple schedules, Excel import, task structures, Schedule Codes, Task Set Profiles
+
+**Items & Task Linking**
+
+Items, Task Manager
+
+Raising Items, Lead Teams, linking Items to tasks, retrospectively linking existing Items
+
+**Progress Calculation**
+
+Progress
+
+Weighting, field data, why progress stays at 0%, why completion doesn't equal 100%
+
+**Task Viewer & Schedule Tracking**
+
+Task Viewer
+
+Viewing task progress, checking linked Items, understanding what is contributing to task completion
+
+**Dashboards & Reporting**
+
+Dashboard
+
+Missing schedules, incorrect percentages, refresh timing, differences between Dashboard and Task Viewer
+
+##   
+
+**TABLE OF CONTENTS**
+
+-   [Overview](#Overview)
+    -   [Schedule Setup & Configuration](#Schedule-Setup-&-Configuration%C2%A0) 
+    -   [Items & Task Linking](#Items-&-Task-Linking)
+    -   [Progress Calculation](#Progress-Calculation)
+    -   [Task Viewer & Schedule Tracking](#Task-Viewer-&-Schedule-Tracking)
+    -   [Dashboards & Reporting](#Dashboards-&-Reporting)
+
+* * *
+
+## **Schedule Setup & Configuration** 
+
+**What if I have more than one Schedule?**
+
+Add each Schedule to the presets and tag each project with the appropriate Schedule Code.
+
+Schedule Codes allow multiple schedules to be managed.
+
+  
+
+**Can I import my Schedule from Excel?**
+
+Yes. Generate the spreadsheet from Task Manager, update it and import it back.
+
+Recommended for larger schedules.
+
+**Related Guide:** [Configuring Progress Monitoring (Project Level)](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/configuring-progress-monitoring)
+
+  
+
+**Can I have different task structures on different projects?**
+
+Yes. Task structures can be configured at project level.
+
+  
+
+**Can two Schedules use the same Schedule Code?**  
+No. Each Schedule being tracked should have its own unique Schedule Code.
+
+The Schedule Code identifies the Schedule and allows RDrive to distinguish between different Schedules being tracked.
+
+**Related Guide:** [Progress Monitoring – Tags & Presets](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/progress-monitoring-tags-presets)
+
+  
+
+**Do I need to create Presets separately for every project?**
+
+No. Presets are created at Company level and populated with the appropriate values at Project level.
+
+This provides a consistent structure across the company while allowing each project to hold the Schedule information relevant to that project.
+
+**Related Guide:** [Progress Monitoring – Tags & Presets](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/progress-monitoring-tags-presets)
+
+  
+
+  
+
+**Why is my Schedule not appearing correctly in Progress Monitoring?**
+
+Check that the Schedule Code populated in the Project Preset matches the Tag applied to the Schedule.
+
+The Schedule Code and Schedule Tag are used to identify the correct Schedule. If they do not match, RDrive may not associate the Schedule correctly.
+
+**Related Guide:** [Progress Monitoring – Tags & Presets](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/progress-monitoring-tags-presets)
+
+* * *
+
+## **Items & Task Linking**
+
+**Why can I not raise an Item against a task?**
+
+Check that you are a member of the Lead Team assigned to the task.
+
+Only users within the Lead Team can raise Items against that task.
+
+**Related Guide:** [Managing my Scheduled Tasks with Progress Monitoring](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/managing-my-scheduled-tasks-with-progress-monitoring)
+
+  
+
+**How do I retrospectively link existing Items?**
+
+Dashboard → Task Manager → Link → Select Schedule → Set Options → Detect Matches.
+
+Existing Items can be linked without being raised again.
+
+  
+
+**What should I do if the team responsible for a Task changes?**
+
+Update the Lead Team assigned to the Task.
+
+The Lead Team determines which team is responsible for the Task and who can raise the associated Items. If responsibility changes, the Team should be updated within the Task Set.
+
+**Related Guide:** [Managing my Scheduled Tasks with Progress Monitoring](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/managing-my-scheduled-tasks-with-progress-monitoring)
+
+* * *
+
+## **Progress Calculation**
+
+**What happens if there is no weighting?**
+
+Progress will not move beyond 0%.
+
+Weighting determines how progress contributes towards completion.
+
+  
+
+What are weighted field [Understanding Field Weighting](https://docs.rdrive.io/setup/company/categories/categories-template-setup-knowledge-base/understanding-field-weighting)  
+
+How to add weighting to Fields [What can Field Properties do?](https://docs.rdrive.io/setup/company/categories/categories-template-setup-knowledge-base/what-can-field-properties-do) 
+
+  
+
+**Why can I not see progress completed against my Progress Items?**
+
+Check that weighting has been configured against the relevant field data.
+
+Progress calculations depend on weighted field values.
+
+  
+
+What are weighted field [Understanding Field Weighting](https://docs.rdrive.io/setup/company/categories/categories-template-setup-knowledge-base/understanding-field-weighting)  
+
+How to add weighting to Fields [What can Field Properties do?](https://docs.rdrive.io/setup/company/categories/categories-template-setup-knowledge-base/what-can-field-properties-do)
+
+  
+
+**Why does the Dashboard show less than 100% when my tasks look complete?**
+
+Check incomplete child tasks, weighting and outstanding Progress Items.
+
+All contributing elements affect calculated progress.
+
+  
+
+**Why does completing one Item not necessarily make the Task 100% complete?**
+
+**A Task's progress can be calculated from multiple activities and their configured weightings.**
+
+Completing one Item only contributes the amount defined by its Progress Monitoring configuration. Other activities may still need to be completed before the Task reaches 100%.
+
+**Related Guide:** [Introduction to RDrive Progress Monitoring](https://docs.rdrive.io/products/progress-monitoring/introduction-to-rdrive-progress-monitoring)
+
+**Related Guide: [Understanding Field Weighting](https://docs.rdrive.io/setup/company/categories/categories-template-setup-knowledge-base/understanding-field-weighting)**  
+
+* * *
+
+## **Task Viewer & Schedule Tracking**
+
+**I've added a new Task to my Schedule. What should I check?**
+
+Check that the Task is in the correct position, linked to the correct Location and associated with the required Task Set.
+
+Once configured, check the Task in Task Viewer to confirm the expected Items and Progress Monitoring configuration are available.
+
+**Related Guide:** [Managing my Scheduled Tasks with Progress Monitoring](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/managing-my-scheduled-tasks-with-progress-monitoring)
+
+  
+
+**Should I use Manual Update or Bulk Update?**
+
+Use Manual Update for smaller changes and Bulk Update when adding multiple Tasks or making larger changes to the Schedule.
+
+Whichever method you use, Tasks must still be correctly positioned, linked to the appropriate Location and associated with the correct Task Set.
+
+**Related Guide:** [Managing my Scheduled Tasks with Progress Monitoring](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/managing-my-scheduled-tasks-with-progress-monitoring)
+
+  
+
+**Can I add new Locations or Tasks after my Schedule is live?**
+
+Yes. You can update an existing Schedule without recreating it.
+
+For smaller changes, update the Schedule manually. For larger changes, use the Bulk Update functionality to make the required changes more efficiently.
+
+**Related Guide:** [Managing my Scheduled Tasks with Progress Monitoring](https://docs.rdrive.io/progress-monitoring/setup-managing-progress-monitoring/managing-my-scheduled-tasks-with-progress-monitoring)
+
+* * *
+
+## **Dashboards & Reporting**
+
+**Why can I not see my Schedule on the Dashboard?**
+
+Check the Schedule Code/tags and Dashboard configuration.
+
+Dashboard data is filtered according to its configuration.
+
+  
+
+**Why are Task Viewer and the Dashboard showing different progress?**
+
+Check when the Dashboard was last refreshed.
+
+Dashboards are normally refreshed once daily as standard.

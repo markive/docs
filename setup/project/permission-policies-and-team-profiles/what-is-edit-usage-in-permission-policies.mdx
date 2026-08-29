@@ -11,9 +11,13 @@ The flexibility of a permission system lies in its ability to adapt to diverse u
 
 When faced with the introduction of a new subcontractor requiring slightly adjusted permissions, there are two practical options:
 
+  
+
 1.  Create a New Policy with Modifications:Develop a new permission policy that mirrors the existing one and make the necessary adjustments.
 2.  Extend an Existing Policy:  
     Craft a new permission policy that builds upon an existing one, incorporating rules specific to the new subcontractor.
+
+  
 
 By opting for the second approach, organizations can avoid redundancy and maintain a coherent structure. When changes are needed for all subcontractors, modifying the underlying permission policy once will uniformly update permissions for every relevant party.
 
@@ -23,10 +27,14 @@ By opting for the second approach, organizations can avoid redundancy and mainta
 
 The complexity of a permission policy can be overwhelming as rules accumulate. To tackle this issue, consider breaking down policies into smaller, more manageable parts that can be combined to create a coherent policy. For instance:
 
+  
+
 -   (Hidden) Tower 1 issues basic permissions
 -   (Hidden) Tower 2 issues basic permissions
 -   (Hidden) Tower 1 processes basic permissions
 -   (Hidden) Tower 2 processes basic permissions
+
+  
 
 These serve as building blocks that can be combined to form new conceptual policies:
 
@@ -36,15 +44,23 @@ These serve as building blocks that can be combined to form new conceptual polic
 -   (Hidden) **Tower 2 general permissions**
     -   Uses: Tower 2 issues basic permissions, Tower 2 processes basic permissions
 
+  
+
+  
+
 Building on these concepts, functional policies can be developed for specific roles:
 
 -   **Tower 1** **subcontractor**
     -   Uses: **Tower 1 general permissions**
     -   Additional rules for subcontractors
 
+  
+
 -   **Tower 2 subcontractor**
     -   Uses: **Tower 2 general permissions**
     -   Additional rules for subcontractors
+
+  
 
 This hierarchical structure enhances clarity and simplifies the management of permissions across various roles.
 
@@ -58,6 +74,12 @@ Not all policies need to be directly usable. Policies labeled with (Hidden) can 
 
 # Permissions are Additive:
 
+  
+
 In a permission policy, rules are cumulative, adding together to expand a user's capabilities. There are no negative rules that revoke permissions, and rules do not nullify each other. This additive nature extends to the use of multiple permission policies. The more policies employed, the more rules are combined, resulting in a more potent overall policy. Consequently, lower-level policies should contain rules common to most users, with administrative rights reserved for higher-level policies. This ensures a robust and consistent approach to access control.
+
+  
+
+  
 
 Click [**here**](https://docs.rdrive.io/setup/project/permission-policies-and-team-profiles/manage-the-permission-policy) for more insights on permission policy management.

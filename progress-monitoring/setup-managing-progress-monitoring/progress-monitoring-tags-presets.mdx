@@ -1,0 +1,372 @@
+---
+title: "Progress Monitoring – Tags & Presets"
+description: "Tags and Presets are an important part of setting up Progress Monitoring correctly."
+---
+
+![Progress Monitoring – Tags & Presets](/images/kb/103000410664/GAsW0LvdgjafJbv88824rF_5LNSdCpSCJw.png)
+
+### ![Progress Monitoring – Tags & Presets](/images/kb/103000410664/9CvVrjmMLMZZFCtaRNLTj0uO1LYcIRYfvw.png)
+
+# **Overview**
+
+Tags and Presets are an important part of setting up Progress Monitoring correctly.
+
+  
+
+They provide the structure that allows RDrive to identify, organise and report on Progress Monitoring data across your **Company, Projects, Schedules and Dashboards**.
+
+  
+
+Correct configuration is particularly important where:
+
+-   Multiple schedules are being managed
+-   Different projects use different programmes
+-   Progress needs to be filtered or reported separately
+-   Dashboard reporting is required
+-   Schedule information needs to be consistently identified across projects
+
+  
+
+Level
+
+Purpose
+
+**Company Level**
+
+Create the required Presets and define the standard configuration available to projects.
+
+**Project Level**
+
+Populate those Presets with the values applicable to the individual project.
+
+**Schedule**
+
+Apply the required Tags to identify the schedule for Progress Monitoring and link it to the corresponding Schedule Code held within the Project Presets.
+
+**Reporting**
+
+Uses the configured project items, schedule and tagged data to display the relevant Progress Monitoring information.
+
+  
+
+Tags are then used to identify the relevant **Schedule Templates, Schedules, Processes and Issues** that belong to the Progress Monitoring configuration.
+
+  
+
+**TABLE OF CONTENTS**
+
+-   [Overview](#Overview)
+    -   [Company-Level Setup](#Company-Level-Setup)
+        -   [Schedule Presets](#Schedule-Presets)
+    -   [Project Configuartion](#Project-Configuartion)
+        -   [Populate the Presets at Project Level](#Populate-the-Presets-at-Project-Level)
+        -   [Schedule Codes and Schedule Tags](#Schedule-Codes-and-Schedule-Tags)
+    -   [Progress Monitoring Reporting Tags](#Progress-Monitoring-Reporting-Tags)
+-   [FAQs & Troubleshooting](#FAQs-&-Troubleshooting)
+
+* * *
+
+## **Company-Level Setup**
+
+The required Presets must first be created at **Company level**.
+
+  
+
+These create the fields that will later be populated against individual projects.
+
+For projects using more than one schedule, separate Presets are required for each schedule.
+
+  
+
+### **Schedule Presets**
+
+For each schedule, create:
+
+  
+
+Preset
+
+Type
+
+Purpose
+
+Example
+
+**Schedule 1-Code**
+
+Text
+
+Unique code identifying Schedule 1
+
+```
+SCH-01
+```
+
+**Schedule 1-Planned Start Date**
+
+Text
+
+Planned start date for Schedule 1
+
+```
+01/07/2025
+```
+
+**Schedule 1-Planned End Date**
+
+Text
+
+Planned end date for Schedule 1
+
+```
+31/12/2026
+```
+
+**Schedule 2-Code**
+
+Text
+
+Unique code identifying Schedule 2
+
+```
+SCH-02
+```
+
+**Schedule 2-Planned Start Date**
+
+Text
+
+Planned start date for Schedule 2
+
+```
+01/09/2025
+```
+
+**Schedule 2-Planned End Date**
+
+Text
+
+Planned end date for Schedule 2
+
+```
+31/03/2027
+```
+
+###   
+
+Continue the same structure for any additional schedules required. 
+
+  
+
+<Note>
+Important: The Schedule Code entered in the Project Preset must match the Schedule Tag used by that schedule.
+</Note>
+
+* * *
+
+## **Project Configuartion**
+
+### **Populate the Presets at Project Level**
+
+###   
+
+Once the Presets have been created at Company level, they are available to be populated for each individual project.
+
+  
+Populate those fields with the values for that particular project.
+
+  
+
+**Example**
+
+A project containing two programmes might be configured as:
+
+Project Preset
+
+Project Value
+
+Schedule 1-Code
+
+```
+SCH-01
+```
+
+Schedule 1-Planned Start Date
+
+```
+01/07/2025
+```
+
+Schedule 1-Planned End Date
+
+```
+31/12/2026
+```
+
+Schedule 2-Code
+
+```
+SCH-02
+```
+
+Schedule 2-Planned Start Date
+
+```
+01/01/2026
+```
+
+Schedule 2-Planned End Date
+
+```
+31/03/2027
+```
+
+  
+
+This tells Progress Monitoring which schedules and date ranges apply to that project.
+
+  
+
+### **Schedule Codes and Schedule Tags**
+
+This is the key relationship in the setup.
+
+  
+
+The **Schedule Tag MUST match the Preset Schedule Code entered in the Project Preset.**
+
+  
+
+For example:
+
+Configuration
+
+Value
+
+Project Preset
+
+Schedule 1-Code
+
+Preset Value
+
+`SCH-01`
+
+Schedule Tag
+
+`SCH-01`
+
+  
+
+The project configuration determines which values are relevant to that particular project.
+
+* * *
+
+## **Progress Monitoring Reporting Tags**
+
+Progress Monitoring also requires standard tags to identify the different types of data used by each PM configuration.
+
+  
+
+The required tags depend on whether the project is using **PM Lite, PM Pro or PM Sync**.
+
+  
+
+PM Type
+
+Schedule Template Tag
+
+Schedule Tag
+
+Process Tag
+
+Issue Tag
+
+**PM Lite**
+
+```
+bi-pmlite
+```
+
+```
+bi-pmlite
+```
+
+```
+bi-pmlite
+```
+
+```
+BI-Issue
+```
+
+**PM Pro**
+
+```
+bi-pmsync
+```
+
+```
+bi-pmsync
+```
+
+```
+bi-checklist
+```
+
+```
+bi-snag
+```
+
+**PM Sync**
+
+```
+bi-pmsync
+```
+
+```
+bi-pmsync
+```
+
+```
+bi-checklist
+```
+
+```
+bi-snag
+```
+
+* * *
+
+# **FAQs & Troubleshooting**
+
+**Q: What if my project has more than one Schedule?**   
+**A:** Create a separate set of Schedule Presets for each Schedule, including its Code, Planned Start Date and Planned End Date. Each Schedule Code must match the corresponding Schedule Tag. 
+
+  
+
+**Q: Why is my Schedule not appearing correctly in Progress Monitoring?**   
+**A:** Check that the Schedule Code populated in the Project Preset exactly matches the Tag applied to the Schedule
+
+  
+
+**Q: Do I create the Presets separately for every project?**   
+**A:** No. Presets are created at Company level and then populated with the appropriate values at Project level. 
+
+  
+
+**Q: Can two Schedules use the same Schedule Code?**   
+**A:** No. Where multiple Schedules are being tracked within the same project, each Schedule should have its own unique code so that RDrive can identify them separately. 
+
+  
+
+**Q: What if my project has more than one Schedule?**   
+**A:** Create a separate set of Schedule Presets for each Schedule, including its Code, Planned Start Date and Planned End Date. Each Schedule Code must match the corresponding Schedule Tag. 
+
+  
+
+**Q: Why is my Schedule not appearing correctly in Progress Monitoring?**   
+**A:** Check that the Schedule Code populated in the Project Preset exactly matches the Tag applied to the Schedule
+
+  
+
+###

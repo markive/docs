@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Web",
+        "tab": "Products",
         "groups": [
           {
             "group": "Getting started",
@@ -20,68 +20,77 @@
             ]
           },
           {
-            "group": "Issues, defects & records",
+            "group": "Progress Monitoring",
+            "pages": [
+              "products/progress-monitoring/introduction-to-rdrive-progress-monitoring"
+            ]
+          },
+          {
+            "group": "RKive",
+            "pages": [
+              "products/rkive/introduction-to-rkive"
+            ]
+          },
+          {
+            "group": "RPilot",
+            "pages": [
+              "products/rpilot/introduction-to-rpilot-ask-understand-act",
+              "products/rpilot/rpilot-features-and-capbilities"
+            ]
+          },
+          {
+            "group": "Data Bridge",
+            "pages": [
+              "products/data-bridge/integrating-rdrive-with-your-other-platforms"
+            ]
+          },
+          {
+            "group": "Field",
+            "pages": [
+              "products/field/introduction-to-rdrive-field"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "products/analytics/introduction-to-solutions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Field",
+        "groups": [
+          {
+            "group": "Web",
             "pages": [
               {
-                "group": "Create & view",
-                "pages": [
-                  "web/issues/create-and-view/how-to-raise-an-issue-defect-or-record-a-step-by-step-guide",
-                  "web/issues/create-and-view/how-do-i-view-issue-defect-record-history",
-                  "web/issues/create-and-view/how-do-i-subscribe-others-to-an-issue-defect-record",
-                  "web/issues/create-and-view/where-can-i-view-issues-defects-records",
-                  "web/issues/create-and-view/how-do-i-share-an-issue-defect-record",
-                  "web/issues/create-and-view/how-to-batch-change-issue-status"
-                ]
-              },
-              {
-                "group": "Edit",
+                "group": "Issues / Defects / Records",
                 "pages": [
                   "web/issues/edit/how-to-delete-an-issue-defect-record",
-                  "web/issues/edit/how-to-move-an-issue-defect-record"
-                ]
-              },
-              {
-                "group": "Follow up",
-                "pages": [
+                  "web/issues/edit/how-to-move-an-issue-defect-record",
                   "web/issues/follow-up/can-i-reply-to-a-comment-on-the-issue-defect-record",
                   "web/issues/follow-up/how-do-i-assign-an-issue-defect-record",
                   "web/issues/follow-up/can-i-comment-and-notify-someone-of-a-specific-issue-defect-record",
                   "web/issues/follow-up/how-do-i-update-the-status-of-an-issue-defect-record",
-                  "web/issues/follow-up/geo-tagging",
-                  "web/issues/follow-up/how-to-update-the-status-of-an-issue-defect-record"
-                ]
-              },
-              {
-                "group": "Reports",
-                "pages": [
-                  "web/issues/reports/generate-an-issue-defect-record-report-into-csv",
-                  "web/issues/reports/how-do-i-generate-an-issue-defect-record-report"
-                ]
-              },
-              {
-                "group": "Link items",
-                "pages": [
+                  "field/web/issues-defects-records/how-to-batch-change-issue-status",
+                  "web/issues/follow-up/how-to-update-the-status-of-an-issue-defect-record",
                   "web/issues/link-items/to-view-the-attached-documents-of-an-issue-defect-record",
                   "web/issues/link-items/to-view-the-issue-defect-record-s-linked-items",
                   "web/issues/link-items/remove-attached-documents-from-an-issue-defect-record",
                   "web/issues/link-items/how-to-upload-documents-to-an-issue-defect-record",
                   "web/issues/link-items/link-items-to-an-issue-defect-record",
-                  "web/issues/link-items/unlink-items-from-an-issue-defect-record"
+                  "web/issues/link-items/unlink-items-from-an-issue-defect-record",
+                  "web/issues/create-and-view/how-do-i-subscribe-others-to-an-issue-defect-record",
+                  "web/issues/create-and-view/how-do-i-share-an-issue-defect-record",
+                  "web/issues/create-and-view/how-do-i-view-issue-defect-record-history",
+                  "web/issues/create-and-view/where-can-i-view-issues-defects-records",
+                  "web/issues/create-and-view/how-to-raise-an-issue-defect-or-record-a-step-by-step-guide",
+                  "web/issues/create-and-view/how-to-batch-change-issue-status"
                 ]
               },
               {
-                "group": "RKive",
-                "pages": [
-                  "web/issues/rkive/how-to-use-rkive"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Forms",
-            "pages": [
-              {
-                "group": "Create & view",
+                "group": "Web - Processes & Forms",
                 "pages": [
                   "web/forms/create-and-view/where-to-view-the-form-reference-document-s",
                   "web/forms/create-and-view/how-does-a-process-checklist-display-its-workflow-status",
@@ -91,98 +100,45 @@
                   "web/forms/create-and-view/can-i-search-for-a-process-checklist-form-by-its-content",
                   "web/forms/create-and-view/can-i-track-changes-history-in-a-form",
                   "web/forms/create-and-view/how-to-add-a-process-checklist-from-the-plan-viewer",
-                  "web/forms/create-and-view/how-do-i-search-for-a-process-checklist-form"
-                ]
-              },
-              {
-                "group": "Submit, follow up & close",
-                "pages": [
+                  "web/forms/create-and-view/how-do-i-search-for-a-process-checklist-form",
+                  "web/forms/submit-follow-close/how-to-autofill-your-forms-via-previous-content",
+                  "web/forms/submit-follow-close/can-i-reply-to-a-comment-from-the-form",
+                  "web/forms/submit-follow-close/how-to-add-an-additional-form-to-a-process-checklist",
+                  "web/forms/submit-follow-close/making-use-of-the-comment-function",
                   "web/forms/submit-follow-close/how-can-i-update-the-status-of-a-process-checklist-form",
                   "web/forms/submit-follow-close/how-to-edit-update-a-form",
-                  "web/forms/submit-follow-close/how-to-autofill-your-forms-via-previous-content",
-                  "web/forms/submit-follow-close/how-to-add-an-additional-form-to-a-process-checklist",
-                  "web/forms/submit-follow-close/how-to-assign-a-form-to-other-users-web",
-                  "web/forms/submit-follow-close/making-use-of-the-comment-function",
-                  "web/forms/submit-follow-close/can-i-reply-to-a-comment-from-the-form"
-                ]
-              },
-              {
-                "group": "Export",
-                "pages": [
-                  "web/forms/export/can-i-export-a-specific-form-in-the-process-as-pdf",
-                  "web/forms/export/can-i-export-the-entire-process-as-pdf",
-                  "web/forms/export/download-a-csv-export-file-for-processes",
-                  "web/forms/export/how-to-download-process-with-linked-content"
-                ]
-              },
-              {
-                "group": "Link items",
-                "pages": [
-                  "web/forms/link-items/can-i-attach-documents-to-a-form",
-                  "web/forms/link-items/can-i-remove-the-documents-attached-to-a-form",
-                  "web/forms/link-items/how-to-link-issues-processes-to-a-form",
-                  "web/forms/link-items/how-to-unlink-issues-processes-from-a-form",
                   "web/forms/link-items/how-to-view-a-form-s-linked-items",
-                  "web/forms/link-items/how-to-view-the-attached-documentation-to-a-form"
-                ]
-              },
-              {
-                "group": "Edit process",
-                "pages": [
-                  "web/forms/edit-process/can-i-change-the-location-of-a-process",
+                  "web/forms/link-items/how-to-view-the-attached-documentation-to-a-form",
+                  "web/forms/link-items/how-to-unlink-issues-processes-from-a-form",
+                  "web/forms/link-items/how-to-link-issues-processes-to-a-form",
+                  "web/forms/link-items/can-i-remove-the-documents-attached-to-a-form",
+                  "web/forms/link-items/can-i-attach-documents-to-a-form",
                   "web/forms/edit-process/can-i-delete-a-process",
+                  "web/forms/edit-process/can-i-change-the-location-of-a-process",
+                  "web/forms/edit-process/updating-the-external-reference-of-a-process",
                   "web/forms/edit-process/how-to-batch-move-items",
-                  "web/forms/edit-process/how-to-edit-update-a-form",
-                  "web/forms/edit-process/updating-the-external-reference-of-a-process"
+                  "web/forms/edit-process/how-to-edit-update-a-form"
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Mobile",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "mobile/getting-started/how-do-i-download-project-on-the-mobile-app",
-              "mobile/getting-started/what-is-the-difference-between-the-download-project-modes",
-              "mobile/getting-started/how-to-remove-and-re-add-the-project",
-              "mobile/getting-started/where-to-add-additional-project-s-to-the-app",
-              "mobile/getting-started/how-to-navigate-the-new-landing-page-mobile-app-june-2023",
-              "mobile/getting-started/downloading-projects-in-rdrive-mobile-app"
-            ]
           },
           {
-            "group": "General",
+            "group": "Mobile",
             "pages": [
-              "mobile/general/what-is-synchronise-and-why-should-i-do-it",
-              "mobile/general/save-a-bookmark-for-filter",
-              "mobile/general/scanning-qr-code-to-input-text-and-ext-reg-field",
-              "mobile/general/where-to-add-additional-project-s-to-the-app",
-              "mobile/general/how-to-view-documents-from-the-document-repository",
-              "mobile/general/switch-teams-app",
-              "mobile/general/how-to-remove-and-re-add-the-project",
-              "mobile/general/how-to-sync-your-rdrive-app",
-              "mobile/general/how-to-add-additional-projects-to-the-rdrive-app",
-              "mobile/general/understanding-project-download-modes-in-the-rdrive-app",
-              "mobile/general/in-app-camera-function-reducing-image-quality",
-              "mobile/general/how-to-reply-to-a-comment-on-an-issue-defect-record",
-              "mobile/general/what-s-assigned-to-my-team"
-            ]
-          },
-          {
-            "group": "Issues, defects & records",
-            "pages": [
+              {
+                "group": "Getting Started on the Mobile App",
+                "pages": [
+                  "mobile/getting-started/how-do-i-download-project-on-the-mobile-app",
+                  "mobile/getting-started/downloading-projects-in-rdrive-mobile-app"
+                ]
+              },
               {
                 "group": "Add & View issue / record",
                 "pages": [
                   "mobile/issues/add-view-issue-record/how-to-raise-an-issue-defect-or-record",
                   "mobile/issues/add-view-issue-record/how-to-view-issue-record-status-update-history",
                   "mobile/issues/add-view-issue-record/how-to-view-issue-record",
-                  "mobile/issues/add-view-issue-record/how-to-view-the-linked-item-s-of-the-issue-record",
-                  "mobile/issues/add-view-issue-record/linked-issue-alternative-2"
+                  "mobile/issues/add-view-issue-record/how-to-view-the-linked-item-s-of-the-issue-record"
                 ]
               },
               {
@@ -205,12 +161,7 @@
                   "mobile/issues/issue-general/how-to-reply-to-a-comment-on-an-issue-record",
                   "mobile/issues/issue-general/how-to-share-the-issue-record"
                 ]
-              }
-            ]
-          },
-          {
-            "group": "Forms",
-            "pages": [
+              },
               {
                 "group": "Plan viewer - Add new process",
                 "pages": [
@@ -227,17 +178,6 @@
                 ]
               },
               {
-                "group": "Process - General",
-                "pages": [
-                  "mobile/forms/process-general/can-i-delete-a-process-app",
-                  "mobile/forms/process-general/change-the-controller-of-the-process",
-                  "mobile/forms/process-general/how-to-add-form-s-to-a-process-via-app",
-                  "mobile/forms/process-general/how-to-reply-to-a-comment-on-a-form",
-                  "mobile/forms/process-general/how-to-search-find-processes",
-                  "mobile/forms/process-general/how-to-share-a-process-with-other-users"
-                ]
-              },
-              {
                 "group": "Form - General",
                 "pages": [
                   "mobile/forms/form-general/how-does-the-comment-function-work",
@@ -250,243 +190,7 @@
             ]
           },
           {
-            "group": "Troubleshooting",
-            "pages": [
-              "mobile/troubleshooting/how-to-export-project-database-files-to-send-to-snagr",
-              "mobile/troubleshooting/how-to-remove-and-readd-the-project",
-              "mobile/troubleshooting/what-to-do-if-the-app-crash",
-              "mobile/troubleshooting/app-diagnostics",
-              "mobile/troubleshooting/why-you-may-need-to-remove-and-re-add-your-project",
-              "mobile/troubleshooting/rdrive-in-app-notifications"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "FAQ",
-        "groups": [
-          {
-            "group": "General",
-            "pages": [
-              "faq/general/why-do-you-need-to-install-the-rdrive-app",
-              "faq/general/how-can-i-contact-support",
-              "faq/general/switch-team-web",
-              "faq/general/what-is-my-default-team-and-what-does-it-do",
-              "faq/general/what-is-controller-and-how-to-change",
-              "faq/general/privileges",
-              "faq/general/how-to-reset-the-password-for-the-user",
-              "faq/general/login-with-passwordless",
-              "faq/general/login-with-two-factor-authentication",
-              "faq/general/how-do-i-get-notifications",
-              "faq/general/why-can-t-i-take-certain-actions-or-view-certain-records",
-              "faq/general/can-i-save-the-media-i-captured-from-the-app",
-              "faq/general/mastering-universal-search-flexibility",
-              "faq/general/reaching-out-to-support",
-              "faq/general/in-app-camera-function-reducing-image-quality",
-              "faq/general/how-to-check-the-email-log",
-              "faq/general/personalize-your-finder-display-settings",
-              "faq/general/rdrive-app-vs-web-why-do-i-need-to-install-the-app",
-              "faq/general/how-to-view-an-issue-or-record",
-              "faq/general/how-can-i-add-photo-to-the-issue-record",
-              "faq/general/how-to-add-rdrive-to-your-home-screen-as-a-web-app-ios-android"
-            ]
-          },
-          {
-            "group": "Issues",
-            "pages": [
-              "faq/issue/enable-a-disabled-issue-profile",
-              "faq/issue/the-pins-have-different-shapes-and-icon-what-do-they-mean"
-            ]
-          },
-          {
-            "group": "Processes",
-            "pages": [
-              "faq/process/how-to-view-the-text-in-full-in-form-viewer-drop-down-menu-when-it-is-truncated",
-              "faq/process/when-a-field-is-mandatory-in-a-form-will-it-force-the-user-to-fill-it-in-before-closing-the-form",
-              "faq/process/does-a-process-have-to-be-assigned-to-someone-a-team-at-all-times"
-            ]
-          },
-          {
-            "group": "Dashboard",
-            "pages": [
-              "faq/dashboard/can-i-export-the-data-from-the-dashboard",
-              "faq/dashboard/generate-a-site-daily-report",
-              "faq/dashboard/how-to-generate-the-gf527-via-the-dashboard",
-              "faq/dashboard/how-to-use-the-site-overview-dashboard"
-            ]
-          },
-          {
-            "group": "Setup",
-            "pages": [
-              "faq/setup/edit-my-account-settings",
-              "faq/setup/display-setting-cannot-enable-both-created-by-created-date-at-the-same-time",
-              "faq/setup/how-are-tags-used",
-              "faq/setup/what-is-the-relationship-between-assign-subscribe-share",
-              "faq/setup/how-to-effectively-use-the-preset-spreadsheet",
-              "faq/setup/how-to-get-my-api-key",
-              "faq/setup/unlock-the-power-of-rfid-nfc-scanning-with-rdrive",
-              "faq/setup/how-to-add-a-reusable-signature-to-your-account-on-the-website"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Documents",
-        "groups": [
-          {
-            "group": "Documents",
-            "pages": [
-              "documents/documents/search-documents",
-              "documents/documents/what-are-documents-for",
-              "documents/documents/how-to-upload-documents",
-              "documents/documents/how-to-create-a-folder",
-              "documents/documents/how-to-download-documents",
-              "documents/documents/is-there-version-control-in-rdrive-documents",
-              "documents/documents/delete-or-recover-documents"
-            ]
-          },
-          {
-            "group": "Bundles",
-            "pages": [
-              "documents/bundles/create-a-bundle",
-              "documents/bundles/download-a-bundle",
-              "documents/bundles/edit-the-bundle",
-              "documents/bundles/manager-documents-in-the-bundle",
-              "documents/bundles/what-is-bundle"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Setup",
-        "groups": [
-          {
-            "group": "Project setup",
-            "pages": [
-              {
-                "group": "Project General Setting",
-                "pages": [
-                  "setup/project/project-general-setting/edit-project-information",
-                  "setup/project/project-general-setting/enabling-feature-previews"
-                ]
-              },
-              {
-                "group": "Users and Teams",
-                "pages": [
-                  "setup/project/users-and-teams/how-to-disable-a-team-from-the-project",
-                  "setup/project/users-and-teams/how-to-edit-team-info",
-                  "setup/project/users-and-teams/how-to-add-team-to-project",
-                  "setup/project/users-and-teams/how-to-disable-the-user-from-the-project",
-                  "setup/project/users-and-teams/how-to-edit-user-info",
-                  "setup/project/users-and-teams/how-can-i-reset-the-authenticated-device-for-others",
-                  "setup/project/users-and-teams/how-to-add-user-s-to-project",
-                  "setup/project/users-and-teams/how-to-manage-the-team-member-s"
-                ]
-              },
-              {
-                "group": "Plan viewer - Navigation",
-                "pages": [
-                  "setup/project/plan-viewer-navigation/creating-and-managing-a-navigation-plan-in-rdrive",
-                  "setup/project/plan-viewer-navigation/update-navigation-plan-guide",
-                  "setup/project/plan-viewer-navigation/managing-drilldown-on-drawings"
-                ]
-              },
-              {
-                "group": "Drawings and Locations",
-                "pages": [
-                  {
-                    "group": "Drawing sets",
-                    "pages": [
-                      "setup/project/drawings-and-locations/drawing-sets/how-to-edit-or-delete-a-drawing-set",
-                      "setup/project/drawings-and-locations/drawing-sets/how-to-add-a-new-drawing-set"
-                    ]
-                  },
-                  {
-                    "group": "Drawings",
-                    "pages": [
-                      "setup/project/drawings-and-locations/drawings/what-is-the-file-size-limit-of-drawings",
-                      "setup/project/drawings-and-locations/drawings/how-to-edit-drawing",
-                      "setup/project/drawings-and-locations/drawings/how-to-upload-drawing-s"
-                    ]
-                  },
-                  {
-                    "group": "Locations",
-                    "pages": [
-                      "setup/project/drawings-and-locations/locations/how-to-generate-qr-codes-for-locations",
-                      "setup/project/drawings-and-locations/locations/edit-delete-the-location-pin-s",
-                      "setup/project/drawings-and-locations/locations/location-pin-on-the-drawing"
-                    ]
-                  },
-                  "setup/project/drawings-and-locations/find-and-replace-the-drawings-drawing-sets-title",
-                  "setup/project/drawings-and-locations/how-to-clone-a-drawing-s-drawing-set",
-                  "setup/project/drawings-and-locations/how-do-rdrive-handle-pdf-as-images-drawings-form-pages"
-                ]
-              },
-              {
-                "group": "Permission Policies and Team Profiles",
-                "pages": [
-                  "setup/project/permission-policies-and-team-profiles/understanding-permission-policies-and-rules",
-                  "setup/project/permission-policies-and-team-profiles/how-to-add-a-permission-policy",
-                  "setup/project/permission-policies-and-team-profiles/manage-the-permission-policy",
-                  "setup/project/permission-policies-and-team-profiles/what-is-edit-usage-in-permission-policies",
-                  "setup/project/permission-policies-and-team-profiles/what-should-i-be-aware-of-when-exporting-permission-policies",
-                  "setup/project/permission-policies-and-team-profiles/in-which-order-do-i-set-up-the-users-for-a-project",
-                  "setup/project/permission-policies-and-team-profiles/what-is-team-profile-and-how-to-setup",
-                  "setup/project/permission-policies-and-team-profiles/manage-the-team-profile",
-                  "setup/project/permission-policies-and-team-profiles/difference-between-process-and-form-permissions"
-                ]
-              },
-              {
-                "group": "Category - Issue Profiles",
-                "pages": [
-                  "setup/project/category-issue-profiles/add-a-new-issue-profile",
-                  "setup/project/category-issue-profiles/assignment-rule-issue-profile",
-                  "setup/project/category-issue-profiles/disable-an-issue-profile",
-                  "setup/project/category-issue-profiles/edit-issue-profile",
-                  "setup/project/category-issue-profiles/export-issue-profile",
-                  "setup/project/category-issue-profiles/prefill-issue-profile"
-                ]
-              },
-              {
-                "group": "Category - Process Profiles",
-                "pages": [
-                  "setup/project/category-process-profiles/why-can-t-i-edit-a-process-profile-s-pre-population-fields-i-see-a-blank-page",
-                  "setup/project/category-process-profiles/export-process-profile",
-                  "setup/project/category-process-profiles/assignment-rule-process-profile",
-                  "setup/project/category-process-profiles/prefill-process-profile",
-                  "setup/project/category-process-profiles/disable-a-process-profile",
-                  "setup/project/category-process-profiles/edit-process-profile",
-                  "setup/project/category-process-profiles/add-a-new-process-profile",
-                  "setup/project/category-process-profiles/enable-a-disabled-process-profile"
-                ]
-              },
-              {
-                "group": "Preset",
-                "pages": [
-                  "setup/project/preset/how-to-edit-a-preset-image",
-                  "setup/project/preset/how-to-edit-a-preset-spreadsheet-on-the-project",
-                  "setup/project/preset/how-to-edit-a-preset-text",
-                  "setup/project/preset/how-to-edit-the-items-of-a-preset-list"
-                ]
-              },
-              {
-                "group": "Subscriptions and Reports",
-                "pages": [
-                  "setup/project/subscriptions-and-reports/how-to-add-a-subscription-policy",
-                  "setup/project/subscriptions-and-reports/managing-scheduled-report-policies-in-rdrive",
-                  "setup/project/subscriptions-and-reports/managing-subscription-policies-and-rules"
-                ]
-              },
-              {
-                "group": "Dashboard",
-                "pages": [
-                  "setup/project/dashboard/edit-the-dashboard-title-sorting"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Company setup",
+            "group": "Company Settings",
             "pages": [
               {
                 "group": "Users",
@@ -498,6 +202,9 @@
               {
                 "group": "Categories",
                 "pages": [
+                  "setup/company/categories/how-to-add-a-category-and-subcategory",
+                  "setup/company/categories/edit-the-category-and-subcategory",
+                  "setup/company/categories/how-to-recategorize",
                   {
                     "group": "Categories - Issue/record Template",
                     "pages": [
@@ -526,14 +233,6 @@
                   {
                     "group": "Categories - Template Setup Knowledge Base",
                     "pages": [
-                      {
-                        "group": "Computation",
-                        "pages": [
-                          "setup/company/categories/categories-template-setup-knowledge-base/computation/computation-function-overview",
-                          "setup/company/categories/categories-template-setup-knowledge-base/computation/computation-list-of-output-fields",
-                          "setup/company/categories/categories-template-setup-knowledge-base/computation/computation-best-practices-in-finance-accounting"
-                        ]
-                      },
                       "setup/company/categories/categories-template-setup-knowledge-base/why-do-we-need-to-publish-the-template-after-changes",
                       "setup/company/categories/categories-template-setup-knowledge-base/what-can-field-properties-do",
                       "setup/company/categories/categories-template-setup-knowledge-base/can-i-add-template-to-project-s-from-the-company-area",
@@ -541,12 +240,17 @@
                       "setup/company/categories/categories-template-setup-knowledge-base/what-happens-when-i-use-rollback",
                       "setup/company/categories/categories-template-setup-knowledge-base/understanding-version-reference-in-rdrive",
                       "setup/company/categories/categories-template-setup-knowledge-base/why-have-a-yellow-triangle-warning",
-                      "setup/company/categories/categories-template-setup-knowledge-base/understanding-field-weighting"
+                      "setup/company/categories/categories-template-setup-knowledge-base/understanding-field-weighting",
+                      {
+                        "group": "Computation",
+                        "pages": [
+                          "setup/company/categories/categories-template-setup-knowledge-base/computation/computation-function-overview",
+                          "setup/company/categories/categories-template-setup-knowledge-base/computation/computation-list-of-output-fields",
+                          "setup/company/categories/categories-template-setup-knowledge-base/computation/computation-best-practices-in-finance-accounting"
+                        ]
+                      }
                     ]
-                  },
-                  "setup/company/categories/how-to-add-a-category-and-subcategory",
-                  "setup/company/categories/edit-the-category-and-subcategory",
-                  "setup/company/categories/how-to-recategorize"
+                  }
                 ]
               },
               {
@@ -582,8 +286,240 @@
               {
                 "group": "Security",
                 "pages": [
-                  "setup/company/security/enable-the-2fa-passwordless-company-level",
-                  "setup/company/security/setting-up-sso-azure-ad"
+                  "setup/company/security/enable-the-2fa-passwordless-company-level"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Project Setup",
+            "pages": [
+              {
+                "group": "Getting Started & Settings",
+                "pages": [
+                  "setup/project/project-general-setting/edit-project-information",
+                  "setup/project/project-general-setting/enabling-feature-previews"
+                ]
+              },
+              {
+                "group": "Preset",
+                "pages": [
+                  "field/project-setup/preset/adjusting-the-presets-for-issue-analysis-dashboard"
+                ]
+              },
+              {
+                "group": "Teams / Users / Roles",
+                "pages": [
+                  "field/project-setup/teams-users-roles/adding-users-teams-to-a-project",
+                  "standards/permissions-and-workflows/users-teams-and-roles",
+                  "standards/permissions-and-workflows/functional-areas-and-role-based-permissions"
+                ]
+              },
+              {
+                "group": "Drawing Sets / Drawings / Navigation",
+                "pages": [
+                  "field/project-setup/drawing-sets-drawings-navigation/setting-up-drawing-sets-drawings-locations"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Categories & Subcategories (Items/Issues/Processes/Forms)",
+            "pages": [
+              "field/categories-subcategories-items-issues-processes-forms/understanding-items-in-rdrive",
+              "field/categories-subcategories-items-issues-processes-forms/managing-processes-forms-on-the-rdrive-website",
+              "standards/permissions-and-workflows/what-is-the-workflow-for-standard-issue-profiles-defects-issues-snags",
+              "field/categories-subcategories-items-issues-processes-forms/raising-managing-custom-positioned-items-pins-in-rdrive",
+              {
+                "group": "Processes",
+                "pages": [
+                  "setup/project/category-process-profiles/export-process-profile",
+                  "setup/project/category-process-profiles/assignment-rule-process-profile",
+                  "setup/project/category-process-profiles/prefill-process-profile",
+                  "setup/project/category-process-profiles/enable-a-disabled-process-profile",
+                  "setup/project/category-process-profiles/disable-a-process-profile",
+                  "setup/project/category-process-profiles/edit-process-profile",
+                  "setup/project/category-process-profiles/add-a-new-process-profile"
+                ]
+              },
+              {
+                "group": "Issues",
+                "pages": [
+                  "setup/project/category-issue-profiles/disable-an-issue-profile",
+                  "setup/project/category-issue-profiles/export-issue-profile",
+                  "setup/project/category-issue-profiles/assignment-rule-issue-profile",
+                  "setup/project/category-issue-profiles/prefill-issue-profile",
+                  "setup/project/category-issue-profiles/edit-issue-profile",
+                  "setup/project/category-issue-profiles/add-a-new-issue-profile"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Subscriptions, Reports & Downlaods",
+            "pages": [
+              "web/issues/reports/generate-an-issue-defect-record-report-into-csv",
+              "web/issues/reports/how-do-i-generate-an-issue-defect-record-report",
+              "web/forms/export/how-to-download-process-with-linked-content",
+              "web/forms/export/can-i-export-a-specific-form-in-the-process-as-pdf",
+              "web/forms/export/can-i-export-the-entire-process-as-pdf",
+              "setup/project/subscriptions-and-reports/how-to-add-a-subscription-policy",
+              "setup/project/subscriptions-and-reports/managing-subscription-policies-and-rules",
+              "setup/project/subscriptions-and-reports/managing-scheduled-report-policies-in-rdrive",
+              "field/subscriptions-reports-downlaods/exporting-data-from-standard-dashboards",
+              "field/subscriptions-reports-downlaods/searching-reporting-from-the-list-view"
+            ]
+          },
+          {
+            "group": "Document Repository",
+            "pages": [
+              "documents/documents/search-documents",
+              "documents/documents/what-are-documents-for",
+              "documents/documents/how-to-upload-documents",
+              "documents/documents/how-to-create-a-folder",
+              "documents/documents/how-to-download-documents",
+              "documents/documents/is-there-version-control-in-rdrive-documents",
+              "documents/documents/delete-or-recover-documents",
+              "documents/bundles/download-a-bundle",
+              "documents/bundles/edit-the-bundle",
+              "documents/bundles/manager-documents-in-the-bundle",
+              "documents/bundles/create-a-bundle",
+              "documents/bundles/what-is-bundle"
+            ]
+          },
+          {
+            "group": "General / Troubleshooting / FAQ",
+            "pages": [
+              "faq/general/how-do-i-get-notifications",
+              "faq/general/why-can-t-i-take-certain-actions-or-view-certain-records",
+              "faq/general/how-to-add-rdrive-to-your-home-screen-as-a-web-app-ios-android",
+              "faq/setup/what-is-the-relationship-between-assign-subscribe-share",
+              {
+                "group": "Mobile App - FAQ & Troubleshooting",
+                "pages": [
+                  "mobile/general/save-a-bookmark-for-filter",
+                  "mobile/general/scanning-qr-code-to-input-text-and-ext-reg-field",
+                  "mobile/general/where-to-add-additional-project-s-to-the-app",
+                  "mobile/general/how-to-view-documents-from-the-document-repository",
+                  "mobile/general/what-is-synchronise-and-why-should-i-do-it",
+                  "mobile/general/switch-teams-app",
+                  "mobile/general/how-to-remove-and-re-add-the-project",
+                  "mobile/general/how-to-sync-your-rdrive-app",
+                  "mobile/general/how-to-add-additional-projects-to-the-rdrive-app",
+                  "mobile/general/understanding-project-download-modes-in-the-rdrive-app",
+                  "mobile/general/in-app-camera-function-reducing-image-quality",
+                  "mobile/general/how-to-reply-to-a-comment-on-an-issue-defect-record",
+                  "mobile/general/what-s-assigned-to-my-team",
+                  "field/general-troubleshooting-faq/mobile-app-faq-troubleshooting/how-to-add-a-reusable-signature-to-your-account-on-the-application",
+                  "mobile/troubleshooting/how-to-export-project-database-files-to-send-to-snagr",
+                  "mobile/troubleshooting/how-to-remove-and-readd-the-project",
+                  "mobile/troubleshooting/what-to-do-if-the-app-crash",
+                  "mobile/troubleshooting/app-diagnostics",
+                  "mobile/troubleshooting/why-you-may-need-to-remove-and-re-add-your-project",
+                  "mobile/troubleshooting/rdrive-in-app-notifications",
+                  "faq/general/can-i-save-the-media-i-captured-from-the-app",
+                  "faq/general/how-to-view-an-issue-or-record",
+                  "faq/general/how-can-i-add-photo-to-the-issue-record",
+                  "mobile/getting-started/what-is-the-difference-between-the-download-project-modes",
+                  "mobile/getting-started/where-to-add-additional-project-s-to-the-app",
+                  "mobile/getting-started/how-to-remove-and-re-add-the-project",
+                  "mobile/getting-started/how-to-navigate-the-new-landing-page-mobile-app-june-2023",
+                  "web/issues/follow-up/geo-tagging",
+                  "field/general-troubleshooting-faq/mobile-app-faq-troubleshooting/how-to-access-projects-on-the-rdrive-mobile-app",
+                  "field/general-troubleshooting-faq/mobile-app-faq-troubleshooting/knowing-your-way-around-the-rdrive-mobile-app",
+                  "mobile/forms/process-general/how-to-share-a-process-with-other-users",
+                  "mobile/forms/process-general/change-the-controller-of-the-process",
+                  "mobile/forms/process-general/how-to-reply-to-a-comment-on-a-form",
+                  "mobile/forms/process-general/can-i-delete-a-process-app",
+                  "mobile/forms/process-general/how-to-search-find-processes",
+                  "mobile/forms/process-general/how-to-add-form-s-to-a-process-via-app"
+                ]
+              },
+              {
+                "group": "Web - FAQ & Troubleshooting",
+                "pages": [
+                  "faq/general/switch-team-web",
+                  "faq/general/what-is-controller-and-how-to-change",
+                  "faq/process/how-to-view-the-text-in-full-in-form-viewer-drop-down-menu-when-it-is-truncated",
+                  "faq/issue/enable-a-disabled-issue-profile",
+                  "faq/general/mastering-universal-search-flexibility",
+                  "faq/general/how-to-check-the-email-log"
+                ]
+              },
+              {
+                "group": "Permissions / Teams / Users / Roles",
+                "pages": [
+                  {
+                    "group": "Teams & Users",
+                    "pages": [
+                      "setup/project/users-and-teams/how-to-edit-team-info",
+                      "setup/project/users-and-teams/how-to-add-team-to-project",
+                      "setup/project/users-and-teams/how-to-disable-the-user-from-the-project",
+                      "setup/project/users-and-teams/how-to-edit-user-info",
+                      "setup/project/users-and-teams/how-can-i-reset-the-authenticated-device-for-others",
+                      "setup/project/users-and-teams/how-to-add-user-s-to-project",
+                      "setup/project/users-and-teams/how-to-manage-the-team-member-s",
+                      "setup/project/users-and-teams/how-to-disable-a-team-from-the-project",
+                      "setup/project/permission-policies-and-team-profiles/manage-the-team-profile"
+                    ]
+                  },
+                  {
+                    "group": "Permisisions & Permission Policies",
+                    "pages": [
+                      "setup/project/permission-policies-and-team-profiles/understanding-permission-policies-and-rules",
+                      "setup/project/permission-policies-and-team-profiles/what-is-edit-usage-in-permission-policies",
+                      "setup/project/permission-policies-and-team-profiles/what-should-i-be-aware-of-when-exporting-permission-policies",
+                      "setup/project/permission-policies-and-team-profiles/what-is-team-profile-and-how-to-setup",
+                      "setup/project/permission-policies-and-team-profiles/in-which-order-do-i-set-up-the-users-for-a-project",
+                      "setup/project/permission-policies-and-team-profiles/manage-the-permission-policy",
+                      "setup/project/permission-policies-and-team-profiles/how-to-add-a-permission-policy",
+                      "setup/project/permission-policies-and-team-profiles/difference-between-process-and-form-permissions"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Drawing Sets / Drawings / Navigation / Locations",
+                "pages": [
+                  {
+                    "group": "Drawing Sets, Drawings & Navigation",
+                    "pages": [
+                      "setup/project/drawings-and-locations/how-do-rdrive-handle-pdf-as-images-drawings-form-pages",
+                      "setup/project/drawings-and-locations/find-and-replace-the-drawings-drawing-sets-title",
+                      "setup/project/drawings-and-locations/how-to-clone-a-drawing-s-drawing-set",
+                      "setup/project/plan-viewer-navigation/creating-and-managing-a-navigation-plan-in-rdrive",
+                      "setup/project/plan-viewer-navigation/update-navigation-plan-guide",
+                      "setup/project/plan-viewer-navigation/managing-drilldown-on-drawings",
+                      "setup/project/drawings-and-locations/drawing-sets/how-to-edit-or-delete-a-drawing-set",
+                      "setup/project/drawings-and-locations/drawing-sets/how-to-add-a-new-drawing-set",
+                      "setup/project/drawings-and-locations/drawings/what-is-the-file-size-limit-of-drawings",
+                      "setup/project/drawings-and-locations/drawings/how-to-edit-drawing",
+                      "setup/project/drawings-and-locations/drawings/how-to-upload-drawing-s"
+                    ]
+                  },
+                  {
+                    "group": "Locations",
+                    "pages": [
+                      "setup/project/drawings-and-locations/locations/how-to-generate-qr-codes-for-locations",
+                      "setup/project/drawings-and-locations/locations/edit-delete-the-location-pin-s",
+                      "setup/project/drawings-and-locations/locations/location-pin-on-the-drawing"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Dashboards",
+                "pages": [
+                  "setup/project/dashboard/edit-the-dashboard-title-sorting"
+                ]
+              },
+              {
+                "group": "Presets / Lists / Spredsheets",
+                "pages": [
+                  "setup/project/preset/how-to-edit-a-preset-spreadsheet-on-the-project",
+                  "setup/project/preset/how-to-edit-a-preset-text",
+                  "setup/project/preset/how-to-edit-a-preset-image",
+                  "setup/project/preset/how-to-edit-the-items-of-a-preset-list"
                 ]
               }
             ]
@@ -591,50 +527,100 @@
         ]
       },
       {
-        "tab": "Standards",
+        "tab": "Progress Monitoring",
         "groups": [
           {
-            "group": "Permissions & workflows",
+            "group": "Setup & Managing Progress Monitoring",
             "pages": [
-              "standards/permissions-and-workflows/users-teams-and-roles",
-              "standards/permissions-and-workflows/functional-areas-and-role-based-permissions",
-              "standards/permissions-and-workflows/what-is-the-workflow-for-standard-issue-profiles-defects-issues-snags"
+              "progress-monitoring/setup-managing-progress-monitoring/configuring-progress-monitoring",
+              "progress-monitoring/setup-managing-progress-monitoring/progress-monitoring-tags-presets",
+              "progress-monitoring/setup-managing-progress-monitoring/managing-my-scheduled-tasks-with-progress-monitoring",
+              "progress-monitoring/setup-managing-progress-monitoring/frequently-asked-questions"
             ]
           }
         ]
       },
       {
-        "tab": "Support",
+        "tab": "RKive",
         "groups": [
           {
-            "group": "Support",
+            "group": "Configuration & Setup",
             "pages": [
-              "support/support/what-are-these-warning-indicators-on-my-projects-rules",
-              "support/support/how-can-i-configure-computation-in-my-rdrive-forms"
+              "web/issues/rkive/how-to-use-rkive"
             ]
           }
         ]
       },
       {
-        "tab": "Integrations",
+        "tab": "Data Bridge",
         "groups": [
           {
-            "group": "Project analytics",
+            "group": "Configuration",
             "pages": [
-              "integrations/project-analytics/project-overview",
-              "integrations/project-analytics/what-does-the-issue-analysis-dashboard-offer"
+              "data-bridge/configuration/setting-up-an-asite-integration-with-rdrive"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Analytics",
+        "groups": [
+          {
+            "group": "Project Reporting",
+            "pages": [
+              {
+                "group": "Project Analytics",
+                "pages": [
+                  "integrations/project-analytics/project-overview",
+                  "integrations/project-analytics/what-does-the-issue-analysis-dashboard-offer",
+                  "analytics/project-reporting/project-analytics/how-to-define-the-project-level-issue-analysis-dashboard"
+                ]
+              }
             ]
           },
           {
-            "group": "iFrame integration",
+            "group": "Company Wide Reporting",
+            "pages": [
+              "analytics/company-wide-reporting/company-level-process-overview",
+              "analytics/company-wide-reporting/company-wide-issue-analysis-dashboard"
+            ]
+          },
+          {
+            "group": "General / Troubleshooting / FAQ's",
             "pages": [
               "integrations/iframe/troubleshooting-iframe-issues-in-rdrive"
             ]
           },
           {
-            "group": "Progress monitoring",
+            "group": "Quality",
             "pages": [
-              "integrations/progress-monitoring/rdrive-progress-monitoring"
+              "analytics/quality/safety-audit"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Company Administration",
+        "groups": [
+          {
+            "group": "Account Settings",
+            "pages": [
+              "faq/setup/edit-my-account-settings",
+              "faq/setup/how-to-get-my-api-key",
+              "faq/setup/how-to-add-a-reusable-signature-to-your-account-on-the-website"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Security",
+        "groups": [
+          {
+            "group": "Security & Access",
+            "pages": [
+              "faq/general/login-with-passwordless",
+              "faq/general/login-with-two-factor-authentication",
+              "setup/company/security/setting-up-sso-azure-ad"
             ]
           }
         ]

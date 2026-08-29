@@ -9,19 +9,29 @@ RDrive’s computation capabilities offer an effective way to automate calculati
 
 * * *
 
+  
+
 **TABLE OF CONTENTS**
 
--   [Step 1: Designing the PO Template](#step-1%3a-designing-the-po-template)
--   [Step 2: Configuring RDrive Computation](#step-2%3a-configuring-rdrive-computation)
--   [Step 3: Implementation](#step-3%3a-implementation)
--   [Step 4: Testing the PO](#step-4%3a-testing-the-po)
--   [Best Practices](#best-practices)
+-   [Step 1: Designing the PO Template](#Step-1%3A-Designing-the-PO-Template)
+-   [Step 2: Configuring RDrive Computation](#Step-2%3A-Configuring-RDrive-Computation)
+-   [Step 3: Implementation](#Step-3%3A-Implementation)
+-   [Step 4: Testing the PO](#Step-4%3A-Testing-the-PO)
+-   [Best Practices](#Best-Practices)
+
+[](https://docs.rdrive.io/setup/company/categories/categories-template-setup-knowledge-base/computation/computation-best-practices-in-finance-accounting)
 
 * * *
+
+  
+
+## 
 
 ## **Step 1: Designing the PO Template**
 
 Load the PO Template in RDrive.
+
+  
 
 **Input Fields**  
 Your PO should include:
@@ -29,6 +39,8 @@ Your PO should include:
 -   **Qty**: A numeric field for the quantity of items.
 -   **Unit Price**: A numeric field for the price per unit.
 -   **Discount (%)**: A numeric field for the discount percentage applied to the entire PO.
+
+  
 
 **Computed Fields**  
 Include the following **outputs**:
@@ -38,6 +50,10 @@ Include the following **outputs**:
 -   **Subtotal**: Calculates the sum of all item totals.
 -   **Discount Amount**: Calculates the total discount amount based on the subtotal and discount percentage.
 -   **Total**: Calculates the overall total for the PO after applying the discount.
+
+##   
+
+##   
 
 ## **Step 2: Configuring RDrive Computation**
 
@@ -55,6 +71,8 @@ Include the following **outputs**:
     
     -   **Field Type**: Decimal
     -   **Description**: Enter the discount percentage applied to the total PO.
+
+  
 
 **Output Setup**
 
@@ -88,6 +106,10 @@ Include the following **outputs**:
 
 ## ![Computation - Best Practices in Finance/Accounting](/images/kb/103000322969/R9v--DcqKLb7dtNQjU-3bFP3rtKRzr-fIQ.png)
 
+  
+
+##   
+
 ## **Step 3: Implementation**
 
 -   **Select Fields**:
@@ -120,6 +142,10 @@ Include the following **outputs**:
     3.  **Save and Publish the PO**.  
         
 
+  
+
+  
+
 ## **Step 4: Testing the PO**
 
 **Input Sample Data**:
@@ -127,6 +153,8 @@ Include the following **outputs**:
 -   **Row 1**: Qty = 5, Unit Price = 20, Discount (%) = 10
 -   **Row 2**: Qty = 3, Unit Price = 15, 
 -   **Discount** **(%)**:  10
+
+  
 
 **Verify Outputs**:
 
@@ -139,6 +167,10 @@ Include the following **outputs**:
 
 * * *
 
+  
+
+  
+
 ## **Best Practices**
 
 -   **Ensure Dynamic Indexing**: Use `ROW()` to generate item numbers dynamically.
@@ -146,9 +178,19 @@ Include the following **outputs**:
 -   **Simplify User Experience**: Use clear labels and provide real-time validation feedback.
 -   **Test for Edge Cases**: Validate functionality with empty fields and invalid inputs.
 
+  
+
+  
+
 By leveraging RDrive's computation features, you can create a dynamic and automated PO that enhances tracking and ensures data integrity. This methodology can be applied to other financial processes, improving efficiency across your organization.
 
+  
+
+  
+
 _Attached is the exported template file for your reference. Feel free to upload it at your company level to give it a try._
+
+  
 
 Attachments (1)
 

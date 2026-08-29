@@ -7,38 +7,48 @@ description: "A Process must include at least one Form, but it can have multiple
 
 A **Process** must include at least one **Form**, but it can have multiple Forms. When a Process is created, it automatically generates the associated Form(s) since they are linked as a single entity. However, actions on the Process and the Form can be managed separately.
 
+  
+
 ![Difference Between Process and Form Permissions](/images/kb/103000336139/sfbdiRn23ikFjgme02iZdslQKdBL1RJssg.png)  
 
 * * *
 
+  
+
 **TABLE OF CONTENTS**
 
--   [Understanding the Relationship Between Process and Form](#understanding-the-relationship-between-process-and-form)
-    -   [Common Actions](#common-actions)
+-   [Understanding the Relationship Between Process and Form](#Understanding-the-Relationship-Between-Process-and-Form)
+    -   [Common Actions](#Common-Actions)
         
-        -   [Create](#create)
-        -   [Read](#read)
-        -   [Share](#share)
-        -   [Unshare](#unshare)
+        -   [Create](#Create)
+        -   [Read](#Read)
+        -   [Share](#Share)
+        -   [Unshare](#Unshare)
         
-        -   [Differences in Actions](#differences-in-actions)
-    -   [Process-Specific Actions](#process-specific-actions)
+        -   [Differences in Actions](#Differences-in-Actions)
+    -   [Process-Specific Actions](#Process-Specific-Actions)
         
-        -   [Change Controller](#%e2%80%8bchange-controller)
-        -   [Move](#%e2%80%8b%e2%80%8bmove)
-        -   [Delete](#%e2%80%8b%e2%80%8bdelete)
+        -   [Change Controller](#%E2%80%8BChange-Controller)
+        -   [Move](#%E2%80%8B%E2%80%8BMove)
+        -   [Delete](#%E2%80%8B%E2%80%8BDelete)
         
-    -   [Form-Specific Actions](#form-specific-actions)
+    -   [Form-Specific Actions](#Form-Specific-Actions)
         
-        -   [Edit](#edit)
-        -   [Change Status](#change-status)
-        -   [Close](#close)
-        -   [Reopen](#reopen)
-        -   [Assign](#assign)
-        -   [Assign](#assign-1)
+        -   [Edit](#Edit)
+        -   [Change Status](#Change-Status)
+        -   [Close](#Close)
+        -   [Reopen](#Reopen)
+        -   [Assign](#Assign)
+        -   [Assign](#Assign-1)
         
 
+  
+
 * * *
+
+  
+
+  
 
 ## **Common Actions**
 
@@ -53,12 +63,35 @@ Both Process and Form permissions share the following common actions:
 
 ### Differences in Actions
 
-| Action | Process Permission | Form Permission |
-| --- | --- | --- |
-| **Create** | Creating a Process automatically generates its associated Form(s). | Allows users to add additional Forms to an existing Process. By default, all Forms in the Process are available for selection. |
-| **Read** | Grants permission to read the Process. | Grants permission to read the Form(s). |
-| **Share** | Sharing a Process assigns **Read** permission for the entire Process. | Sharing a Form assigns **Read** permission only for that specific Form. |
-| **Unshare** | Removing sharing revokes **Read** permission for the Process unless the user has explicit read permission assigned. | Removing sharing revokes **Read** permission for the Form unless the user has explicit read permission assigned. |
+Action
+
+Process Permission
+
+Form Permission
+
+**Create**
+
+Creating a Process automatically generates its associated Form(s).
+
+Allows users to add additional Forms to an existing Process. By default, all Forms in the Process are available for selection.
+
+**Read**
+
+Grants permission to read the Process.
+
+Grants permission to read the Form(s).
+
+**Share**
+
+Sharing a Process assigns **Read** permission for the entire Process.
+
+Sharing a Form assigns **Read** permission only for that specific Form.
+
+**Unshare**
+
+Removing sharing revokes **Read** permission for the Process unless the user has explicit read permission assigned.
+
+Removing sharing revokes **Read** permission for the Form unless the user has explicit read permission assigned.
 
 ### Important Notes on Read Permission
 
@@ -69,6 +102,10 @@ Both Process and Form permissions share the following common actions:
 
 * * *
 
+  
+
+  
+
 ## **Process-Specific Actions**
 
 The following actions apply **only to Processes**:
@@ -77,9 +114,27 @@ The following actions apply **only to Processes**:
 -   **Move**
 -   **Delete**
 
-<table><tbody><tr><td><span><span>Action</span></span></td><td><span><span>Description</span></span></td></tr><tr><td><span><span><strong>Change Controller</strong></span></span></td><td><span><span>Allows changing the Process controller.</span></span></td></tr><tr><td><span><span><strong>Move</strong></span></span></td><td><span><span>Enables moving the Process’s drawing/location and editing external references.</span></span></td></tr><tr><td><span><span><strong>Delete</strong></span></span></td><td><span><span>Deletes the entire Process.</span></span></td></tr></tbody></table>
+  
+
+Action
+
+Description
+
+**Change Controller**
+
+Allows changing the Process controller.
+
+**Move**
+
+Enables moving the Process’s drawing/location and editing external references.
+
+**Delete**
+
+Deletes the entire Process.
 
 * * *
+
+##   
 
 ## **Form-Specific Actions**
 
@@ -91,7 +146,31 @@ The following actions apply **only to Forms**:
 -   **Reopen**
 -   **Assign**
 
-<table><tbody><tr><td><span><span>Action</span></span></td><td><span><span>Description</span></span></td></tr><tr><td><span><span><strong>Edit</strong></span></span></td><td><span><span>Allows users to modify Form fields.</span></span></td></tr><tr><td><span><span><strong>Change Status</strong></span></span></td><td><span><span>Enables users to update the Form status.</span></span></td></tr><tr><td><span><span><strong>Close</strong></span></span></td><td><span><span>Changes the Form status to a terminal (closed) state.</span></span></td></tr><tr><td><span><span><strong>Reopen</strong></span></span></td><td><span><span>Moves the Form status from a terminal (closed) state back to an active state.</span></span></td></tr><tr><td><h4 id="Assign-1"><span><span><strong>Assign</strong></span></span></h4></td><td><span><span>Assigns the Form to a user or team for follow-up actions. <strong>Assignment also includes sharing the Form.</strong></span></span></td></tr></tbody></table>
+  
+
+Action
+
+Description
+
+**Edit**
+
+Allows users to modify Form fields.
+
+**Change Status**
+
+Enables users to update the Form status.
+
+**Close**
+
+Changes the Form status to a terminal (closed) state.
+
+**Reopen**
+
+Moves the Form status from a terminal (closed) state back to an active state.
+
+#### **Assign**
+
+Assigns the Form to a user or team for follow-up actions. **Assignment also includes sharing the Form.**
 
 **Note on Assignments:**
 
@@ -100,9 +179,17 @@ The following actions apply **only to Forms**:
 -   Assigning a Form to an **individual user** makes them a subscriber, meaning they will receive status notifications.
     
 
+  
+
+  
+
 This document clarifies the differences in permissions between **Process** and **Form** to ensure proper access control and workflow management.
 
+  
+
 * * *
+
+  
 
 If you're unsure how to start setting up Permission Policies, find ideas and tips [**here**](https://docs.rdrive.io/setup/project/permission-policies-and-team-profiles/what-is-edit-usage-in-permission-policies)**.** 
 
